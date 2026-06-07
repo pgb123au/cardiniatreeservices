@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Which trees give Pakenham homeowners the most trouble?", "acceptedAnswer": { "@type": "Answer", "text": "Mature blue gums (Eucalyptus globulus) and messmate stringybarks on older Pakenham blocks. Both grow 25–35m, shed big dead limbs in spring, and were planted (or left) too close to the house on 1970s-era subdivisions. They're not bad trees — they're great trees in the wrong spot. We do a lot of crown-reduction and deadwooding work on these in winter to keep the spring storm risk down." } },
+    { "@type": "Question", "name": "Is Pakenham inside a Vegetation Protection Overlay?", "acceptedAnswer": { "@type": "Answer", "text": "Parts of it. The older established Pakenham (north of the Princes Highway, around the heritage area) has VPO coverage; most of the southern growth-corridor estates (Lakeside, Pakenham East, Heritage Springs, Cardinia Lakes) don't. The eastern rural fringe near Toomuc Valley has VPO and ESO. We check the planning mapping for every quote — it changes street-by-street." } },
+    { "@type": "Question", "name": "Why are Pakenham new-build blocks so prone to fallen trees?", "acceptedAnswer": { "@type": "Answer", "text": "Pakenham's growth-corridor estates were built into ex-paddock land, with the original boundary gums often kept on the new fence lines. The original soil profile got disturbed during earthworks, irrigation patterns changed, and root anchorage was compromised — the trees survive but become more storm-vulnerable. We see a lot of these come down in the first 3–5 years post-construction." } },
+    { "@type": "Question", "name": "How fast can you get to a fallen tree in Pakenham?", "acceptedAnswer": { "@type": "Answer", "text": "60–120 minutes for an emergency callout — tree on a house, tree on a car, tree blocking the driveway. Pakenham is the centre of our coverage area, so it's usually closer to 60–90 minutes during business hours, 90–120 minutes after-hours. Phone (03) 9003 0108 — the duty arborist answers, not a call centre." } },
+    { "@type": "Question", "name": "Do you do tree work for Pakenham new-build builders?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — building-pad clearing, tree-protection plans for kept trees, root-zone management during construction, and post-build cleanup. We work with Cardinia Shire builders regularly and can coordinate timing with the slab pour and earthworks. Tree-protection-zone documentation per AS 4970-2009 supplied for any kept tree on a development site." } }
+  ]
+};
+---
+<Layout
+  title="Tree Removal & Lopping Pakenham VIC 3810 | Cardinia Tree Services | (03) 9003 0108"
+  description="Tree removal, lopping, stump grinding & storm response in Pakenham VIC 3810. 60–120 min storm callout. Mature gum specialists. Permits checked. Cert IV arborists. Free fixed-price quote."
+  canonical="https://cardiniatreeservices.com.au/pakenham/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Pakenham 3810 &middot; central shire</span>
+      <h1>Tree services in <span class="accent">Pakenham</span>.</h1>
+      <p class="hero-sub">
+        Mature blue gums and messmates on older blocks, boundary gums on
+        growth-corridor estates, storm-damaged trees in spring. Pakenham is the
+        centre of our coverage area and our most-worked suburb. 60&ndash;120
+        min storm callout, climbing-and-EWP every removal, council mapping
+        checked at every quote.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed-price quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Pakenham tree work</span>
+      <h2>What we see week in, week out.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Mature boundary gums on 1970s and 1980s blocks.</h3>
+        <p>
+          Older Pakenham &mdash; especially around Henry Road, Bourke Park,
+          McGregor Road and the area north of the Princes Highway &mdash; has a
+          lot of 30&ndash;50 year old blue gums and messmate stringybarks
+          planted (or kept) on boundary fences. They&rsquo;re now 25&ndash;35m
+          tall, often leaning, often shedding big dead limbs in spring storms.
+          Crown reduction and deadwooding in winter is the standard
+          intervention; full removal is sometimes the right call when the
+          structure is genuinely past saving.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Growth-corridor boundary trees on new estates.</h3>
+        <p>
+          The newer Pakenham estates &mdash; Lakeside, Pakenham East, Heritage
+          Springs, Cardinia Lakes &mdash; were built into ex-paddock land with
+          the original eucalypt remnants left on boundary fences. The
+          earthworks disturbed soil profile and root anchorage. We see these
+          trees come down in storms a lot in the first 3&ndash;5 years
+          post-construction. Pre-emptive deadwooding and structural
+          assessment is cheap insurance.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Council mapping is patchy.</h3>
+        <p>
+          Northern Pakenham (around the heritage precinct) sits inside a
+          Vegetation Protection Overlay. The southern growth corridor mostly
+          doesn&rsquo;t. The eastern rural fringe around Toomuc Valley has VPO
+          plus Environmental Significance Overlay. We check Cardinia Shire
+          planning mapping street-by-street at every quote and tell you
+          straight: protected, exempt, or needs a permit.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Pakenham jobs.</h3>
+        <ul>
+          <li>Crown reduction + deadwood on a 25m boundary blue gum ($1,200&ndash;$2,000)</li>
+          <li>Full removal of a leaning messmate next to a 1980s house ($3,500&ndash;$6,500)</li>
+          <li>Storm callout: branch through a colorbond roof ($800&ndash;$1,800, often insurance-covered)</li>
+          <li>Building-pad clear for a new house in a Pakenham East subdivision ($1,500&ndash;$3,500)</li>
+          <li>Stump grind set: 3&ndash;5 stumps post-removal for re-turfing ($500&ndash;$1,200)</li>
+          <li>Formative pruning on a row of newly planted ornamental pears ($400&ndash;$700)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other Cardinia Shire suburbs.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Pakenham tree work &mdash; free fixed-price quote.</h2>
+        <p>Storm emergencies same day. Standard quotes within 2&ndash;5 working days.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

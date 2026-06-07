@@ -1,0 +1,189 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Why isn't a 150mm stump grind deep enough before paving or pouring concrete?", "acceptedAnswer": { "@type": "Answer", "text": "Because a 150mm grind only takes the visible stump down to slightly below mower height — it leaves the entire structural root plate intact, plus the major lateral roots extending 1–4m out from the trunk. As those roots decompose over the next 3–10 years they create voids in the soil. If you've poured a concrete slab or laid pavers over the top, you get the classic Cardinia 'paver puddle' — a 200–400mm dish appearing in the middle of your new patio about 18 months in. We see it constantly when someone has tried to save money on a grind before a build. For paving, slab or footings, 450–600mm minimum, taking out the lateral roots above that line, with engineered fill replacing the void." } },
+    { "@type": "Question", "name": "What does a deep 600mm stump grind in Cardinia Shire actually cost?", "acceptedAnswer": { "@type": "Answer", "text": "Standard grind to 150mm on a mid-sized stump (400mm trunk diameter) runs $180–$280 in Cardinia. A deep grind to 450–600mm on the same stump, including lateral root removal in a 1m radius and supply of engineered fill, runs $450–$800. A large eucalypt stump (700mm+ trunk, often a removed River Red Gum or Manna Gum), graded for a slab pour, runs $900–$1,800 depending on lateral spread. We quote on diameter measured at ground level plus the build use — patio, pergola footings, dwelling slab and shed slab each have different depth and fill specs. If you're inside a planning overlay or near a kept protected tree, root removal radius gets a separate AS 4970 review first." } },
+    { "@type": "Question", "name": "What goes back in the hole — and how long before I can build over it?", "acceptedAnswer": { "@type": "Answer", "text": "For a build-grade grind we remove all woody debris from the hole (mulch goes to the mulch pile, not back in the void) and fill with one of three specs depending on the load: engineered crushed rock (Class 3 FCR) compacted in 150mm lifts for a patio or shed slab; cement-stabilised crushed rock for a dwelling slab footing edge; or clean structural fill plus an engineer's certificate for anything bearing a wall load. The settle window — the time you need to wait before building over it — is 4 weeks for compacted FCR under a patio, 6–8 weeks for a shed slab, and we recommend an engineer inspection point before pouring footings for a habitable structure. The mulch-back-into-the-hole approach is fine for a lawn area; it is not acceptable under any structural load." } },
+    { "@type": "Question", "name": "What about stump grinding near a fence line or neighbour's tree in Cardinia?", "acceptedAnswer": { "@type": "Answer", "text": "Two things to check before we start. First, the boundary — fence line stumps are common in Cardinia because of how subdivisions have been laid out, and you cannot legally grind into a tree on the neighbouring title without their written consent. We do a tape measure plus a title check before quoting. Second, AS 4970 root protection if the neighbour has a kept tree near the boundary — the Tree Protection Zone often extends across the fence line, and a deep grind on your side can damage their tree's structural root plate. If we see a TPZ overlap we propose either a hand-excavation method (more expensive but root-safe) or an air-spade investigation to map the roots before grinding. Cardinia Council will follow up if a neighbour reports damage to a protected tree, so this matters." } }
+  ]
+};
+---
+<Layout
+  title="Stump grinding depth Cardinia Shire — pre-fence, pre-paving, pre-slab specs | (03) 9003 0108"
+  description="Why a 150mm grind fails under pavers in Cardinia Shire, what 450–600mm depth costs, engineered fill spec, settle window before building over the void, and AS 4970 considerations near protected trees."
+  canonical="https://cardiniatreeservices.com.au/stump-grinding-cardinia/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Service &middot; build-grade depth</span>
+      <h1>Stump grinding depth for <span class="accent">Cardinia builds</span>.</h1>
+      <p class="hero-sub">
+        A 150mm grind is fine for the lawn. It is not fine before you lay
+        pavers, pour a slab, or set fence posts in a wet Cardinia clay
+        profile. We grind to 450&ndash;600mm with engineered fill, lateral
+        root removal where it counts, and the right settle window so the
+        thing you build over the top stays flat.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/services/stump-grinding/">Stump grinding detail</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why depth matters</span>
+      <h2>The paver puddle &mdash; and how to avoid it.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          The most common stump grinding complaint we get in Cardinia is not
+          the grinding itself &mdash; it&rsquo;s the slow dish that appears
+          in the middle of someone&rsquo;s patio about 18 months after a
+          previous contractor &ldquo;ground the stump out.&rdquo;
+        </p>
+        <p>
+          Here&rsquo;s the mechanism. A mature gum on a Pakenham or Officer
+          block has a structural root plate roughly the size of its canopy
+          &mdash; the major lateral roots can run 2&ndash;4m out from the
+          trunk and 300&ndash;700mm deep. A standard 150mm grind only takes
+          out the visible stump above mower height. Below that, the root
+          plate stays in the ground. Over 3&ndash;10 years that woody mass
+          decomposes &mdash; faster in the wet Cardinia clay than in a
+          well-drained sandy soil because the moisture-and-microbe load is
+          higher.
+        </p>
+        <p>
+          As it decomposes, the soil above settles into the void. If
+          there&rsquo;s pavers, a slab or a concrete footing over the top, you
+          get visible deflection. Pavers get the &ldquo;paver puddle&rdquo;
+          &mdash; a saucer-shaped dish about the trunk diameter. Slabs get a
+          crack. Footings get a slow settle on one corner. The fix at that
+          point is jackhammer the slab, dig out the rotten root mass,
+          structural fill, repour &mdash; which is exactly the money the
+          150mm-grind saving was supposed to avoid.
+        </p>
+        <h3 style="margin-top: 2rem;">The build-grade depth table.</h3>
+        <ul>
+          <li><strong>Lawn / garden bed only.</strong> 150mm grind is fine. Mulch back into the hole, topdress with topsoil.</li>
+          <li><strong>Fence line and post holes.</strong> 300mm grind plus targeted removal of any lateral root crossing the new post position.</li>
+          <li><strong>Pavers and patio.</strong> 450mm minimum, lateral roots out 1m radius, engineered Class 3 FCR fill, 4-week settle.</li>
+          <li><strong>Shed slab.</strong> 500&ndash;600mm, lateral roots out 1.5m radius, cement-stabilised FCR, 6&ndash;8 week settle.</li>
+          <li><strong>Dwelling slab edge or strip footing.</strong> 600mm minimum plus a separate engineering review of the void. We recommend an engineer&rsquo;s inspection point before footings pour.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">The Cardinia clay factor</span>
+      <h2>Why local soil makes this worse than it would be on the sandbelt.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Most of the Cardinia growth corridor (Pakenham, Officer, Cardinia
+          Lakes, Heritage Springs, Beaconsfield flats) sits on reactive grey
+          clay over basalt. Reactive clay does two things that interact
+          badly with a buried decomposing root plate: it holds water, which
+          accelerates the decay; and it expands and contracts with the
+          seasons, which amplifies any settlement at the surface. A void
+          that would settle 30mm over a sandy site can settle 80&ndash;120mm
+          over five years on Cardinia clay.
+        </p>
+        <p>
+          The hills district (Beaconsfield Upper, Cockatoo, Emerald,
+          Gembrook) sits on weathered Silurian sediments &mdash; better
+          drained, less reactive, but steeper. Settlement is less dramatic
+          but if the void is on a slope you get differential settlement that
+          tilts whatever you built over the top.
+        </p>
+        <p>
+          Either way, the answer is the same: take the root plate out at the
+          time of grinding, fill the void with engineered material, give it
+          the right settle window, build with confidence.
+        </p>
+        <h3 style="margin-top: 2rem;">When we use the air spade instead of grinding.</h3>
+        <p>
+          If the stump is within a Tree Protection Zone of a kept neighbour&rsquo;s
+          tree, or close to dwelling footings where ground vibration is a
+          concern, or under a service line we can&rsquo;t locate confidently,
+          we switch to compressed-air excavation (the air spade). It exposes
+          the roots without breaking services or compacting surrounding
+          soil, and we cut roots cleanly with a recip saw to avoid the
+          tearing damage a grinder causes to adjacent root systems. More
+          expensive than grinding but the right tool when the adjacent
+          asset is worth protecting.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Frequently asked</span>
+      <h2>Cardinia stump grinding questions.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+
+        <h3>Isn&rsquo;t 150mm grind enough?</h3>
+        <p>
+          For lawn yes, for build no. Below 150mm the root plate stays
+          intact and decomposes slowly. Pavers and slabs over the top dish
+          out in 18 months to 5 years, especially on Cardinia reactive
+          clay. For paving 450mm, for slabs 600mm, with lateral root
+          removal in a 1&ndash;1.5m radius.
+        </p>
+
+        <h3>What&rsquo;s the price difference for the deeper grind?</h3>
+        <p>
+          Standard 150mm on a mid-sized stump: $180&ndash;$280. Deep
+          600mm including lateral root removal and engineered fill:
+          $450&ndash;$800 same stump. Large eucalypt stump graded for a
+          slab: $900&ndash;$1,800.
+        </p>
+
+        <h3>What goes in the hole and how long before I can build?</h3>
+        <p>
+          All woody debris out (mulch to the mulch pile, not back in the
+          void). Engineered crushed rock fill, compacted in 150mm lifts.
+          Settle window 4 weeks for patio, 6&ndash;8 weeks for shed slab,
+          engineer&rsquo;s inspection point before dwelling footings.
+        </p>
+
+        <h3>What if the stump is on the boundary?</h3>
+        <p>
+          Title check first &mdash; we can&rsquo;t grind into a neighbour&rsquo;s
+          tree without written consent. AS 4970 root-protection-zone check
+          if the neighbour has a kept tree nearby. Air-spade method
+          available if there&rsquo;s a TPZ overlap.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Building over a stump?</h2>
+      <p style="max-width: 50rem; margin: 1rem auto;">
+        Send a photo of the stump with a tape measure across the trunk, and
+        tell us what&rsquo;s going over the top &mdash; pavers, shed slab,
+        deck, dwelling. We&rsquo;ll come back with depth, fill spec, settle
+        window and price.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="mailto:quotes@cardiniatreeservices.com.au">Email a photo</a>
+      </div>
+    </div>
+  </section>
+</Layout>

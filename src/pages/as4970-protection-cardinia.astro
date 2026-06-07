@@ -1,0 +1,209 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What does AS 4970 actually require for protecting a kept tree on a Cardinia build site?", "acceptedAnswer": { "@type": "Answer", "text": "AS 4970-2009 'Protection of trees on development sites' sets out four things in plain order: (1) calculate the Tree Protection Zone (TPZ) as 12 × the trunk diameter at 1.4m, with a minimum 2m radius and a maximum 15m; (2) calculate the Structural Root Zone (SRZ), a smaller inner zone using a formula based on trunk diameter that protects the structural roots holding the tree up; (3) fence the TPZ with a temporary protection fence at least 1.8m high, signed, before any site work starts; (4) impose 'no-go' rules inside the TPZ — no excavation, no soil change, no stockpiling, no vehicles, no concrete washout, no chemical storage. If you must enter the TPZ for genuine engineering reasons, a Project Arborist (AQF Level 5 minimum) must supervise and document each incursion. Cardinia Shire and most planning permits require an AS 4970 report at planning approval stage on any site retaining a significant tree." } },
+    { "@type": "Question", "name": "What is the fencing spec — what does the TPZ fence actually have to look like?", "acceptedAnswer": { "@type": "Answer", "text": "Standard AS 4970 fencing spec: temporary steel mesh panels (the orange or green construction-grade panels, not domestic star pickets and bunting), 1.8m minimum height, secured at the base with concrete feet, panels overlapped and clipped at joins. Signage at every visible face: 'Tree Protection Zone — No Entry — Project Arborist (name + mobile).' Ground inside the TPZ kept at original grade — no fill, no cut, no compaction. We typically lay 100mm of woodchip mulch inside the TPZ before fencing goes up: it reduces compaction from accidental foot traffic, retains soil moisture, and absorbs minor knocks. Fencing stays up from site establishment until practical completion — not until 'we need to get a load in there.' If a section has to come down temporarily, written authorisation from the Project Arborist, supervised entry, fence back up at end of day." } },
+    { "@type": "Question", "name": "What's the watering schedule for a kept tree during a Cardinia construction project?", "acceptedAnswer": { "@type": "Answer", "text": "Construction is a drought event for the kept tree even in a wet winter — the surrounding ground gets compacted, runoff patterns change, and the canopy often loses a percentage of feeder roots to inadvertent damage. Standard watering regime: 50mm of water per square metre of TPZ area, monthly through Apr–Sep (cooler months) and fortnightly through Oct–Mar (hotter months). Deep-soak via tree-ring soaker hose or 30-minute slow-flow sprinkler — not a quick blast that runs off. For a mature River Red Gum or Manna Gum with a 10m radius TPZ, that's roughly 15,000L per watering event during summer. Sounds like a lot. It is. But it's a fraction of the cost of replacing a 60-year-old tree that died because no one watered it through a 2-year build." } },
+    { "@type": "Question", "name": "Who signs off the AS 4970 compliance at the end of a Cardinia build?", "acceptedAnswer": { "@type": "Answer", "text": "The Project Arborist — the AQF Level 5 (or higher) consulting arborist named in the AS 4970 report at planning approval stage. They inspect at four standard milestones: pre-construction (TPZ fencing inspection, baseline tree health assessment, photos); during demolition / bulk earthworks; before major service trenching near the TPZ; and at practical completion (final tree health assessment, fence removal sign-off). Each inspection gets a written report with photos, lodged with Council if required by the permit condition. The sign-off matters: if the tree fails or declines in the 24 months after completion, the planning permit holder is exposed unless the Project Arborist documentation shows compliance throughout. We carry that AQF Level 5 capacity in-house, or we coordinate with the consulting arborist already named on your permit." } }
+  ]
+};
+---
+<Layout
+  title="AS 4970 tree protection during Cardinia construction — TPZ fencing, watering, sign-off | (03) 9003 0108"
+  description="What AS 4970-2009 requires for protecting a kept tree on a Cardinia Shire build site — Tree Protection Zone calculation, fencing spec, no-dig area, watering schedule, and Project Arborist sign-off at four milestones."
+  canonical="https://cardiniatreeservices.com.au/as4970-protection-cardinia/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Compliance &middot; AS 4970-2009 on Cardinia builds</span>
+      <h1>AS 4970 tree protection on a <span class="accent">Cardinia construction site</span>.</h1>
+      <p class="hero-sub">
+        You&rsquo;re keeping the big Manna Gum in the corner of the block.
+        The planning permit says you must. AS 4970-2009 sets out how:
+        calculate the TPZ, fence it, no-dig inside it, water it through the
+        build, and sign it off at four milestones. We write the report, run
+        the fencing inspection, and certify compliance.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get an AS 4970 quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What the standard says</span>
+      <h2>The four pillars of AS 4970-2009 compliance.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          AS 4970-2009 &ldquo;Protection of trees on development sites&rdquo;
+          is the Australian Standard that Cardinia Shire planning permits
+          point to when they say &ldquo;the existing tree shall be retained
+          and protected throughout construction.&rdquo; The standard is
+          short, sensible and almost always misunderstood by builders the
+          first time they encounter it. Four pillars.
+        </p>
+        <h3 style="margin-top: 2rem;">Pillar 1. Calculate the TPZ.</h3>
+        <p>
+          The Tree Protection Zone is the circular area around the trunk
+          inside which the tree&rsquo;s feeder roots and structural roots
+          live. Formula: TPZ radius = 12 × Diameter at Breast Height (DBH,
+          measured at 1.4m). Minimum 2m, maximum 15m. For a 60cm DBH mature
+          River Red Gum that&rsquo;s a 7.2m radius circle &mdash; a 14.4m
+          diameter no-build envelope. We mark the TPZ on the site plan in
+          red, and we mark the Structural Root Zone (a smaller inner circle
+          using a separate formula) in orange. Inside the SRZ is genuinely
+          no-go &mdash; cutting structural roots can drop the tree.
+        </p>
+        <h3 style="margin-top: 2rem;">Pillar 2. Fence the TPZ.</h3>
+        <p>
+          1.8m steel mesh panels with concrete feet, signed at every visible
+          face, up before site establishment, down only at practical
+          completion. Mulch the ground inside the TPZ to 100mm before fencing
+          to reduce compaction risk. Bunting and star pickets &mdash; the
+          domestic shortcut &mdash; is not AS 4970 compliant and will get
+          flagged by Council&rsquo;s building surveyor on a routine
+          inspection.
+        </p>
+        <h3 style="margin-top: 2rem;">Pillar 3. No-dig inside the TPZ.</h3>
+        <p>
+          No excavation, no soil cut, no soil fill, no stockpiling of
+          materials, no vehicle traffic, no concrete or chemical washout,
+          no temporary site office, no portable toilet. If a service trench
+          genuinely must enter the TPZ &mdash; sewer connection, stormwater,
+          power conduit &mdash; AS 4970 allows it under three conditions:
+          hand-dig only, supervised by the Project Arborist, with any root
+          over 25mm preserved and re-buried (not cut). Air-spade excavation
+          is the gold-standard method for these incursions and we carry one
+          on the truck.
+        </p>
+        <h3 style="margin-top: 2rem;">Pillar 4. Water it through the build.</h3>
+        <p>
+          Construction is a drought event for the kept tree. Compaction
+          reduces water infiltration even outside the TPZ. Runoff patterns
+          change. Some feeder roots will be lost despite best efforts. The
+          watering regime &mdash; deep-soak monthly cool season, fortnightly
+          warm season &mdash; keeps the tree in stress range A rather than
+          stress range C.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Cardinia-specific notes</span>
+      <h2>Why Cardinia AS 4970 jobs need extra care.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          A few patterns we see repeatedly on Cardinia Shire AS 4970 work,
+          worth flagging up front.
+        </p>
+        <p>
+          <strong>Indigenous-remnant species are usually the keepers.</strong>
+          On growth-corridor subdivisions (Pakenham, Officer, Cardinia
+          Lakes, Heritage Springs) the trees retained on individual lots
+          are almost always the surviving River Red Gum, Yellow Box or
+          Manna Gum that pre-date subdivision. These have been there since
+          before the bulldozers. The root systems extend well beyond the
+          obvious TPZ and have already adapted to the original landform &mdash;
+          which means soil cuts and fills around them are particularly
+          damaging.
+        </p>
+        <p>
+          <strong>BAL bushfire overlay interaction.</strong> In the hills
+          district (Beaconsfield Upper, Cockatoo, Emerald, Gembrook, parts
+          of Avonsleigh) most building lots are in a Bushfire Management
+          Overlay and have a BAL rating &mdash; commonly BAL-29 or BAL-40.
+          Defendable space requirements can conflict with AS 4970 TPZ
+          rules &mdash; the bushfire engineer wants the canopy reduced or
+          the tree gone, the planning condition wants it kept. We work
+          this conflict out with the bushfire engineer and the consulting
+          arborist at planning stage so it doesn&rsquo;t turn into a stop-work
+          order at frame stage.
+        </p>
+        <p>
+          <strong>Builder education up front.</strong> Most builders have
+          done one or two AS 4970 jobs and learned the hard way. We do a
+          15-minute toolbox talk at site establishment for every site
+          worker who will be on the block during the build &mdash; concretor,
+          plumber, electrician, framer. Five minutes saves a $200,000
+          replacement liability later. We bring printed TPZ diagrams and
+          stickers for the site shed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Frequently asked</span>
+      <h2>Cardinia AS 4970 questions.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+
+        <h3>What does AS 4970 actually require?</h3>
+        <p>
+          Calculate the TPZ (12 × DBH, 2&ndash;15m range) and the SRZ.
+          Fence the TPZ with 1.8m steel mesh, signed, before any site work.
+          No excavation, fill, stockpile, traffic or washout inside the
+          TPZ. Watering regime through the build. Project Arborist
+          supervises any genuine incursion. Sign-off at four standard
+          milestones.
+        </p>
+
+        <h3>What does the fence have to look like?</h3>
+        <p>
+          1.8m steel mesh panels with concrete feet, not domestic star
+          pickets and bunting. Mulch the ground inside to 100mm before
+          fencing. Up from site establishment, down at practical
+          completion only.
+        </p>
+
+        <h3>What&rsquo;s the watering schedule?</h3>
+        <p>
+          50mm per square metre of TPZ, monthly Apr&ndash;Sep, fortnightly
+          Oct&ndash;Mar. Deep-soak via soaker hose or slow-flow sprinkler.
+          For a 10m TPZ that&rsquo;s about 15,000L per summer event &mdash;
+          large, but small against the replacement cost of the tree.
+        </p>
+
+        <h3>Who signs the project off?</h3>
+        <p>
+          The Project Arborist (AQF Level 5 minimum) named in the AS 4970
+          report. Four inspections: pre-construction, demolition/earthworks,
+          service trenching, practical completion. Documentation lodged
+          with Council if the permit conditions require it. We hold that
+          AQF Level 5 capacity in-house.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Got a planning permit with a tree retention condition?</h2>
+      <p style="max-width: 50rem; margin: 1rem auto;">
+        Send us the permit reference and the plans. We&rsquo;ll come back
+        with the AS 4970 report, the TPZ fencing quote, the watering
+        schedule and a fixed price for the four inspection milestones
+        &mdash; all in one package.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="mailto:quotes@cardiniatreeservices.com.au">Email the permit</a>
+      </div>
+    </div>
+  </section>
+</Layout>

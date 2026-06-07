@@ -1,0 +1,116 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "How deep do you grind a stump?", "acceptedAnswer": { "@type": "Answer", "text": "Standard grind is 100–150mm below grade — deep enough for re-turfing, garden beds, mulch and most landscaping. For paving or concrete slabs we grind 300mm+ below grade. For pool work, footings or anywhere structural we grind 400–500mm and follow the major lateral roots out 1–2m. Otherwise the root mass rots over 5–10 years and creates voids that crack pavers and slabs." } },
+    { "@type": "Question", "name": "Will the grinder fit through my side gate?", "acceptedAnswer": { "@type": "Answer", "text": "Almost always. We run a 30cm narrow-access grinder that fits through a 900mm gate (standard residential side gate is 900–1000mm), plus a 76cm tow-behind for big paddock and rural stumps. If the gate is under 900mm or there's a deck/path obstruction, we lift the grinder over (it weighs ~120kg) or detach the cowling. Worst-case access we hand-grub the stump with axes and a small petrol stump-cutter, slower but possible." } },
+    { "@type": "Question", "name": "What about the roots — do they need to come out?", "acceptedAnswer": { "@type": "Answer", "text": "Depends what you're doing with the space. For re-turfing or garden bed: no, the lateral roots will rot in place over 5–10 years (sometimes triggering fungal growth, sometimes not — species-dependent). For paving, slab, footing, pool surround: yes, the major lateral roots out to 1–2m radius need to be ground or chased out, otherwise the rotting mass creates settlement voids. We quote both options at the site visit." } },
+    { "@type": "Question", "name": "What about the chips? Can I keep them?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — stump chips are excellent garden mulch (high carbon, slow-release nutrients). We can leave the chip pile on-site for free, dump it elsewhere on the block, or remove it. If you want topsoil backfill instead of chips, we backfill with screened topsoil (extra $40–$80 depending on volume). Chip from stumps treated with herbicides (paint-on glyphosate killers) shouldn't go on edible-garden beds." } },
+    { "@type": "Question", "name": "Are there underground services I need to worry about?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — and we check before grinding. Stumps are often near service entries (gas, water, NBN, electrical). We require a Dial Before You Dig (DBYD) lookup for any stump within 5m of a service entry, and we mark services with paint before grinding. Tree roots can also grow around old service pipes and pull them when ground — we work conservatively near services and pause if we hit anything that doesn't feel like root." } },
+    { "@type": "Question", "name": "Can you do it the same day as the removal?", "acceptedAnswer": { "@type": "Answer", "text": "Usually yes if access for the grinder is straightforward. On tight backyard removals we sometimes have to schedule the grinder for the next available slot because the truck and chipper take up the access during the climb. We always quote stump grinding as a separate line item so you can decide whether to bundle or not — it doesn't save money to bundle, but it does save a return visit." } },
+    { "@type": "Question", "name": "How much does stump grinding cost?", "acceptedAnswer": { "@type": "Answer", "text": "Small stump (under 30cm diameter): $150–$250. Medium stump (30–60cm): $250–$400. Large stump (60–100cm): $400–$700. Multiple stumps in one visit: discounted to $80–$150 per additional stump. Below-grade for paving / slab / pool: + $100–$200. Lateral-root chasing for structural work: + $100–$400 depending on radius." } }
+  ]
+};
+---
+<Layout
+  title="Stump Grinding Pakenham & Cardinia Shire | Below-Grade Removal | (03) 9003 0108"
+  description="Stump grinding across Pakenham, Officer, Beaconsfield & Cardinia Shire. Below-grade removal for replanting, paving, slabs or pool work. Narrow-access 30cm grinder fits through 900mm gates. $150–$500."
+  canonical="https://cardiniatreeservices.com.au/services/stump-grinding/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Below-grade &middot; narrow access &middot; lateral roots</span>
+      <h1>Stump grinding in <span class="accent">Pakenham &amp; Cardinia Shire</span>.</h1>
+      <p class="hero-sub">
+        Stump ground 100&ndash;500mm below grade depending on what you&rsquo;re
+        doing with the space. Narrow-access 30cm grinder fits through a 900mm
+        side gate. Lateral roots followed for paving, slab and pool work.
+        Chips removed or left as mulch &mdash; your call.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed-price quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>How deep to grind &mdash; depends on what comes next.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Re-turfing or garden bed:</strong> 100&ndash;150mm below grade. Lateral roots left to rot in place over 5&ndash;10 years (which is fine).</li>
+          <li><strong>Mulch or new shrub planting:</strong> 150&ndash;200mm. New root system establishes above the rotting root plate.</li>
+          <li><strong>Paving (pavers, brick paths, decorative concrete):</strong> 300mm+ below grade, plus lateral roots chased 1m radius. Otherwise rot voids crack the pavers within 5&ndash;7 years.</li>
+          <li><strong>Concrete slab (shed pad, extension):</strong> 400&ndash;500mm + lateral roots 1.5m radius. Anything less risks settlement.</li>
+          <li><strong>Pool surround or pool footing:</strong> 500mm + lateral roots 2m radius. Engineer&rsquo;s call if it&rsquo;s within the pool excavation zone.</li>
+          <li><strong>Building footing:</strong> Full root plate removal &mdash; typically requires excavation rather than grinding. We&rsquo;ll tell you if that&rsquo;s the case.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Two grinders, every job.</h3>
+        <ul>
+          <li><strong>30cm narrow-access self-propelled grinder.</strong> Fits through a 900mm gate. Used for most backyard stumps. Petrol, 26HP.</li>
+          <li><strong>76cm tow-behind hydraulic grinder.</strong> For paddock stumps, large gum stumps over 80cm diameter, and land-clearing jobs. 70HP diesel, tracked.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Before we grind.</h3>
+        <p>
+          <strong>Dial Before You Dig (DBYD) lookup</strong> for any stump
+          within 5m of a service entry &mdash; gas, water, NBN, electrical, sewer.
+          Services marked with paint or flags. We&rsquo;ll pause and reassess
+          if we hit anything that doesn&rsquo;t feel like root &mdash; old
+          galvanised water mains and orange-conduit NBN are the usual
+          surprises in older Cardinia Shire properties.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Typical Cardinia Shire stump-grind jobs.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>$150&ndash;$250:</strong> Small fruit-tree or ornamental stump (under 30cm), backyard access, 100mm below grade. Half hour.</li>
+          <li><strong>$250&ndash;$400:</strong> Medium gum or oak stump (30&ndash;60cm), side-gate access, 150mm below grade. 1&ndash;1.5 hours.</li>
+          <li><strong>$400&ndash;$700:</strong> Large stump (60&ndash;100cm), tight access or below-grade for paving. 2&ndash;3 hours.</li>
+          <li><strong>$700&ndash;$1,500:</strong> Massive paddock stump (over 1m), 76cm grinder, lateral roots chased. Half day.</li>
+          <li><strong>Multi-stump discount:</strong> Each additional stump on the same visit usually $80&ndash;$150 cheaper than booked alone.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Get a fixed-price stump-grind quote.</h2>
+        <p>Below-grade, lateral roots, chips removed or left. We bring two grinders, every job.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

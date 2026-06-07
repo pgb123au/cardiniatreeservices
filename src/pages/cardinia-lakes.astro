@@ -1,0 +1,125 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What tree work is most common in Cardinia Lakes?", "acceptedAnswer": { "@type": "Answer", "text": "Cardinia Lakes is a new-build estate so the work is mostly (1) building-pad clearing and boundary-tree removal at the start of a build, (2) stump grinding post-construction so the new turf/garden goes in clean, and (3) formative pruning of advanced ornamentals (pears, magnolias, gleditsias, crepe myrtles) that the landscaper planted at 3m and now want shaping in years 1–3." } },
+    { "@type": "Question", "name": "Are there protected trees in Cardinia Lakes?", "acceptedAnswer": { "@type": "Answer", "text": "Mostly not — Cardinia Lakes is a planned residential estate developed from ex-paddock land, so the typical small-block (350–550m²) doesn't sit inside a Vegetation Protection Overlay. The exception is original boundary gums retained from the old paddock fences, which sometimes attract VPO protection. We check the planning mapping at the quote stage." } },
+    { "@type": "Question", "name": "Why do boundary gums on Cardinia Lakes blocks fall so often?", "acceptedAnswer": { "@type": "Answer", "text": "The estate was built into ex-grazing paddock and the original eucalypt remnants were kept on the new fence lines. Earthworks disturbed the soil profile and compacted the root anchorage zone — the trees survive but root stability is reduced. Combined with the open-aspect wind exposure of a new estate (no surrounding mature canopy to break wind), boundary gums are storm-vulnerable for the first 3–5 years post-construction. Pre-emptive deadwood + structural assessment is cheap insurance." } },
+    { "@type": "Question", "name": "How fast can you get to a fallen tree in Cardinia Lakes?", "acceptedAnswer": { "@type": "Answer", "text": "60–90 minutes for an emergency callout. Cardinia Lakes is in our central coverage zone — easy access off the Princes Highway." } },
+    { "@type": "Question", "name": "Do you grind stumps so we can re-turf the new build?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — this is one of our most common Cardinia Lakes jobs. After the builder leaves, the original boundary stumps and any tree-pad stumps need grinding 100–150mm below grade for the landscaper to re-turf cleanly. Our 30cm narrow-access grinder fits through a standard 900mm side gate. Quoted per stump, with volume discount." } }
+  ]
+};
+---
+<Layout
+  title="Tree Removal & Stump Grinding Cardinia Lakes | Cardinia Tree Services | (03) 9003 0108"
+  description="Tree removal, stump grinding, formative pruning & storm response in Cardinia Lakes. New-build estate specialists — boundary gums, building-pad clearing, advanced-ornamental pruning. Free fixed-price quote."
+  canonical="https://cardiniatreeservices.com.au/cardinia-lakes/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Cardinia Lakes &middot; Arcadia &middot; Timbertop &middot; growth corridor</span>
+      <h1>Tree services in <span class="accent">Cardinia Lakes</span>.</h1>
+      <p class="hero-sub">
+        New-build estate work: building-pad clearing, boundary-gum removal,
+        post-construction stump grinding, and formative pruning of the advanced
+        ornamentals the landscaper planted at 3m. Cardinia Lakes is in our
+        central coverage zone, so storm response is 60&ndash;90 minutes.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed-price quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Cardinia Lakes tree work</span>
+      <h2>What the estate needs (and why).</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Boundary gums from the old paddock fence lines.</h3>
+        <p>
+          Cardinia Lakes was built into ex-grazing land. The original eucalypt
+          boundary trees got retained on the new fence lines &mdash; sometimes
+          to the homeowner&rsquo;s delight, sometimes as an inheritance from
+          the developer. After 3&ndash;5 years of disturbed soil, compacted
+          root zones and open-aspect wind exposure, these trees become more
+          storm-vulnerable than mature gums in established suburbs. The
+          right intervention is usually deadwooding + structural assessment in
+          year 2, then crown reduction at year 5 if needed.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Building-pad clearing at the start.</h3>
+        <p>
+          Most Cardinia Lakes builds start with a small clearing job &mdash;
+          remove the 1&ndash;3 remnant trees that sit inside the slab
+          footprint, grind their stumps below excavation depth, leave any
+          retained boundary trees with proper tree-protection zones (AS 4970
+          fencing). Coordinated with the builder&rsquo;s slab program so it
+          doesn&rsquo;t delay the pour.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Post-build stump grinding for landscaping.</h3>
+        <p>
+          After the slab is poured and the builder has left, the landscaper
+          wants to re-turf cleanly. Any leftover boundary stumps or
+          construction-zone stumps need grinding to 100&ndash;150mm below
+          grade. Our 30cm narrow-access grinder fits through a standard
+          900mm side gate, which is what most Cardinia Lakes blocks have.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Formative pruning of advanced ornamentals.</h3>
+        <p>
+          The estate landscaper plants 3m advanced ornamentals (pears,
+          magnolias, gleditsias, crepe myrtles, sometimes manchurian pears)
+          with crossing branches and codominant stems. One round of formative
+          pruning in years 1&ndash;3 saves $5K+ in structural prune work a
+          decade later. We do these as cheap maintenance visits &mdash; a
+          row of 5&ndash;6 trees for $400&ndash;$800.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Cardinia Lakes jobs.</h3>
+        <ul>
+          <li>Boundary-gum removal + stump grind on a new build ($2,500&ndash;$5,000)</li>
+          <li>Deadwood + assessment on a retained boundary gum, year 2 ($800&ndash;$1,400)</li>
+          <li>Stump grind set of 3&ndash;5 stumps post-construction ($500&ndash;$1,200)</li>
+          <li>Formative prune of 5 advanced ornamentals ($400&ndash;$800)</li>
+          <li>Storm callout: boundary gum down on a colorbond fence ($600&ndash;$1,400)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other Cardinia Shire suburbs.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Cardinia Lakes tree work &mdash; free fixed-price quote.</h2>
+        <p>New build, post-build or storm callout. 60&ndash;90 min response.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

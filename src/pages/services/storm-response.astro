@@ -1,0 +1,147 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What counts as an emergency storm callout?", "acceptedAnswer": { "@type": "Answer", "text": "Anything where the tree (or a piece of it) is creating an immediate danger or blocking access. Tree on a house, on a car, on a fence; tree across the driveway; tree blocking a road; hung-up 'widow-maker' limb caught in another tree; large dead limb hanging over a footpath or play area; major lean change since last storm. If you're standing under it asking whether it's safe — it's an emergency. Call (03) 9003 0108 and stay out from under the tree." } },
+    { "@type": "Question", "name": "How quickly can you get to a fallen tree in Cardinia Shire?", "acceptedAnswer": { "@type": "Answer", "text": "For genuine emergencies: 60–120 minutes for the central shire (Pakenham, Officer, Beaconsfield, Cardinia Lakes, Heritage Springs, Berwick edge); 90–180 minutes for the eastern shire (Nar Nar Goon, Tynong, Bunyip, Garfield, Tonimbuk). After major weather events that drop 50+ trees across the shire, we triage by danger level — house/car/road-blocking first, hung-up limbs second, garden cleanup last (often 24–48 hour queue for the cleanup tier)." } },
+    { "@type": "Question", "name": "Do you handle insurance claims paperwork?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every storm callout includes (1) before-photos showing tree-on-target, (2) written incident report describing what happened and what we did, (3) itemised invoice, and (4) certificate of insurance and arborist qualifications for the file. Most home insurers want all four. We work regularly with AAMI, Allianz, NRMA, RACV, Suncorp, Budget Direct and Youi — if your insurer wants to talk to us directly, fine, just tell them to call (03) 9003 0108." } },
+    { "@type": "Question", "name": "Will my insurance pay for the tree work?", "acceptedAnswer": { "@type": "Answer", "text": "Usually yes for the make-safe — the urgent work needed to stop further damage (removing the tree off the house, making the hung-up limb safe, clearing access). Most home & contents policies cover storm-damaged trees that have caused property damage. Full removal of the rest of the tree, or non-storm-related work, is usually owner-paid. We split the invoice into 'make-safe' (insurance) and 'further work' (owner) when this is the case, so claims are clean." } },
+    { "@type": "Question", "name": "What about hung-up limbs that haven't fallen yet?", "acceptedAnswer": { "@type": "Answer", "text": "Treat them as emergencies. A 'widow-maker' is a broken branch lodged in another tree, hung up against the wind. They drop unpredictably — sometimes weeks after the storm, sometimes when a kid walks under them. Don't try to pull one down with a rope from the ground; the leverage almost always sends it the wrong way. We use throwlines, EWP and sometimes a crane to extract them safely." } },
+    { "@type": "Question", "name": "Do you do after-hours and weekend callouts?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — 24/7, 365 days a year. The phone (03) 9003 0108 rings to the duty arborist after hours; we don't run a call centre. The premium is moderate (around 30% on top of standard rates for after-hours, double-time for 2am Christmas Day) but the response time is the same as during business hours." } },
+    { "@type": "Question", "name": "How much does a storm callout cost?", "acceptedAnswer": { "@type": "Answer", "text": "Small storm work (hung-up limb removed by EWP, small tree off fence, branches off driveway): $400–$800. Mid-sized storm work (tree partially on a house, climber required, rigging): $800–$1,800. Large storm work (mature tree fully on a dwelling, crane required, multi-day): $1,800–$8,000+. Insurance usually covers make-safe work in full when the tree has caused property damage." } }
+  ]
+};
+---
+<Layout
+  title="24/7 Storm Response Pakenham & Cardinia Shire | Emergency Tree Removal | (03) 9003 0108"
+  description="24/7 emergency storm response across Pakenham, Officer, Beaconsfield & all of Cardinia Shire. Tree on house, car or driveway. 60–120 min response central shire. Insurance docs provided. $400–$1,800+."
+  canonical="https://cardiniatreeservices.com.au/services/storm-response/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">24/7 emergency &middot; 60&ndash;120 min response central shire</span>
+      <h1>Storm response in <span class="accent">Cardinia Shire</span> &mdash; 24/7.</h1>
+      <p class="hero-sub">
+        Tree on the house. Branch through the carport. Limb hung up across the
+        driveway. Big gum leaning the wrong way since last night&rsquo;s
+        north-westerly. Phone (03) 9003 0108 &mdash; the duty arborist answers
+        after hours, not a call centre. Insurance documentation included.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed-price quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What we treat as an emergency.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Tree on a building.</strong> House, garage, shed, carport. Make-safe first (stop further damage), full removal once insurance assessor has seen it.</li>
+          <li><strong>Tree on a car or vehicle.</strong> Removed off the vehicle so the tow truck can collect. Insurance photos taken.</li>
+          <li><strong>Tree across the driveway or blocking access.</strong> Cleared to restore access, side-stacked for later cleanup if necessary.</li>
+          <li><strong>Hung-up limb (&ldquo;widow-maker&rdquo;).</strong> Broken branch lodged in another tree or against the canopy &mdash; will drop, but unpredictably. Don&rsquo;t walk under it.</li>
+          <li><strong>Large dead limb over a target.</strong> Driveway, footpath, play area, pool. Pre-emptive removal.</li>
+          <li><strong>Major lean change since last storm.</strong> Especially gums with new soil-heave at the base or visible root-plate movement. Often precedes failure.</li>
+          <li><strong>Tree across powerlines.</strong> AusNet/Powercor first for power isolation (call 13 17 99 for AusNet, 13 22 33 for Powercor). Then us for removal.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">What to do before we arrive.</h3>
+        <ul>
+          <li>Stay out from under the tree and exclusion zone.</li>
+          <li>Photograph the damage from a safe distance &mdash; insurance wants this.</li>
+          <li>If powerlines are involved, do NOT touch anything &mdash; call AusNet 13 17 99 (high-voltage) or Powercor 13 22 33 immediately.</li>
+          <li>If gas line is broken or you smell gas, call AusNet Gas 13 67 07 and evacuate.</li>
+          <li>Move pets and kids inside. Watch for further branch fall.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>How storm response works.</h2>
+      <div style="max-width: 65rem;">
+        <h3>1. Phone triage.</h3>
+        <p>
+          Tell us what&rsquo;s happened, what&rsquo;s under the tree, whether
+          anyone&rsquo;s hurt. We&rsquo;ll talk you through immediate safety
+          &mdash; turn the power off at the mains if branches are touching
+          service lines, evacuate the affected room of the house if a tree is
+          on a roof. We assign the closest available crew. ETA confirmed
+          within 5 minutes.
+        </p>
+
+        <h3 style="margin-top: 2rem;">2. On arrival.</h3>
+        <p>
+          The lead arborist walks the scene with you, assesses the
+          tree/structure, photographs everything, and confirms the
+          make-safe plan. Most insurance assessors want photos taken
+          <em>before</em> we touch anything. We do all four: scene wide-angle,
+          tree-on-target close, structural damage, our crew at work.
+        </p>
+
+        <h3 style="margin-top: 2rem;">3. Make-safe.</h3>
+        <p>
+          The minimum work needed to stop further damage and restore safe
+          access. Tree off the roof, hung-up limb extracted, driveway cleared,
+          live wires not crossed. We don&rsquo;t do speculative removal on
+          a storm callout &mdash; we make safe, then quote any further work.
+          Make-safe is usually the part insurance pays.
+        </p>
+
+        <h3 style="margin-top: 2rem;">4. Documentation.</h3>
+        <p>
+          Written incident report, before/after photos, itemised invoice,
+          insurance certificate and arborist qualifications &mdash; emailed
+          within 24 hours. Most insurers want all four for the claim file.
+          Direct contact with your assessor offered if helpful.
+        </p>
+
+        <h3 style="margin-top: 2rem;">5. Followup.</h3>
+        <p>
+          Once insurance has seen the scene, we quote the rest of the work
+          &mdash; full removal of the tree, stump grind, fence repair
+          coordination, neighbour-tree assessment, etc. Sometimes the tree
+          can be saved with structural prunes; sometimes it has to come
+          out. We tell you honestly.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Where we respond.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Tree down? Branch through the roof?</h2>
+        <p>Call now &mdash; 24/7 emergency line. 60&ndash;120 min response central shire.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Non-urgent quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

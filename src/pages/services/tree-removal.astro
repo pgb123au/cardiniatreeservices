@@ -1,0 +1,136 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "How much does it cost to remove a tree in Pakenham?", "acceptedAnswer": { "@type": "Answer", "text": "Small backyard tree (under 8m, easy access, no powerlines): $800–$1,800. Medium tree (8–15m, climb required or sectional drop): $1,800–$4,500. Large mature gum (15–25m, near house or powerlines): $4,500–$9,000. Hazardous removal next to a dwelling or over a roof (climbed, sectioned, sometimes craned out): $9,000–$15,000. Stump grinding usually quoted separately, $150–$500." } },
+    { "@type": "Question", "name": "How long does a tree removal take?", "acceptedAnswer": { "@type": "Answer", "text": "A clean drop on an open block is 2–4 hours including chipping. A climbed sectional removal next to a house is half a day to a full day. A large multi-stem removal that needs an EWP, spider-lift or crane runs 1–2 days. Stump grinding is usually a separate visit unless the access is straightforward." } },
+    { "@type": "Question", "name": "Will I need a permit to remove the tree?", "acceptedAnswer": { "@type": "Answer", "text": "We check for you. Cardinia Shire mapping shows whether the tree is on the Significant Tree Register, or inside a Vegetation Protection Overlay (VPO) or Environmental Significance Overlay (ESO). Dead, dangerous and pest-host trees are usually exempt. Trees within 10m of an existing dwelling can sometimes be removed under the bushfire 10/30 rule. Anything protected, we lodge the planning permit application for you — 6–8 weeks turnaround typical." } },
+    { "@type": "Question", "name": "Do you handle removals near powerlines?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Trees within the No-Go Zone of energised powerlines (around 6.4m for high-voltage, less for SWER lines) legally require a powerline-trained climber, and sometimes a power isolation by AusNet/Powercor. We coordinate the isolation when needed and the climbers hold the relevant electrical-safety tickets. We won't drop branches across live conductors — period." } },
+    { "@type": "Question", "name": "What happens to the wood and the chips?", "acceptedAnswer": { "@type": "Answer", "text": "Standard quote includes chipping all brush on-site and removing the chips. Logs (anything over ~200mm diameter) can be left for firewood at your request, cut to length and stacked. Some clients keep the slab/burl wood for woodworking. If you want everything gone we cart it all to our yard for processing. If you want a free mulch pile, we'll dump it on the driveway." } },
+    { "@type": "Question", "name": "Is the price you quote the price I pay?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — written fixed-price quote. The only variables we'd ever charge extra for are (1) buried services we discover after grinding starts (rare, and we always warn upfront if we suspect them), (2) additional trees added on the day, (3) council permit fees if we lodge them on your behalf (passed through at cost). Everything else is locked in at quote." } }
+  ]
+};
+---
+<Layout
+  title="Tree Removal Pakenham & Cardinia Shire | Full Removal + Stump | (03) 9003 0108"
+  description="Tree removal across Pakenham, Officer, Beaconsfield & all of Cardinia Shire. Climbed, sectional, EWP or crane access. $800–$15,000 fixed-price. Cert IV arborists, $20M insured."
+  canonical="https://cardiniatreeservices.com.au/services/tree-removal/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Climbed, sectional, EWP &middot; stumps cleaned up</span>
+      <h1>Tree removal in <span class="accent">Pakenham &amp; Cardinia Shire</span>.</h1>
+      <p class="hero-sub">
+        From a 6m wattle on a Pakenham new build to a 28m blue gum overhanging
+        a Beaconsfield roofline, we drop, climb and section trees safely. Cert
+        IV arborists, $20M public liability, council permits lodged on your
+        behalf if needed. Fixed-price quote, chips removed, clean site.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed-price quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>How we approach a removal.</h2>
+      <div style="max-width: 65rem;">
+        <h3>1. The walk-around.</h3>
+        <p>
+          Before any chainsaw fires we walk the tree. We&rsquo;re looking for
+          codominant stems with bark inclusions, fungal brackets (ganoderma,
+          armillaria, phellinus), basal cavities, included branches, cracks
+          across the union, lean change. We check the drop zone for buried
+          services (NBN, gas, irrigation), the chipper path, and exclusion
+          zones for pets and kids. Then we plan the cut sequence.
+        </p>
+
+        <h3 style="margin-top: 2rem;">2. The right access method.</h3>
+        <ul>
+          <li><strong>Whole-tree drop:</strong> Open paddock, no targets, predictable lean. Cheapest. Used for land clearing and rural blocks.</li>
+          <li><strong>Sectional climbed removal:</strong> Climber ascends with throwline + harness, sections lowered on rigging ropes piece-by-piece. Standard for backyard removals next to houses.</li>
+          <li><strong>EWP (cherry picker) access:</strong> When ground is firm and we can get the truck within ~10m of the tree, the EWP basket is faster and safer than climbing.</li>
+          <li><strong>Spider-lift access:</strong> For tight gates, soft ground or steep blocks where a truck-mounted EWP won&rsquo;t go. Fits through a 900mm gate.</li>
+          <li><strong>Crane assist:</strong> Large removals where sectional rigging would take too long, or where the tree has structural defects that make climbing it dangerous. Crane lifts each section out clean.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">3. The cut sequence.</h3>
+        <p>
+          Top down. Brush first (limbs under 100mm), then secondary scaffolds,
+          then the main scaffolds, then the trunk in 2&ndash;4m sections. Each
+          section is rigged to a lowering line before it&rsquo;s cut, so
+          nothing drops uncontrolled. Anything that has to swing past a roofline
+          gets a tag-line ground operator. The chipper runs continuously to keep
+          the drop zone clear.
+        </p>
+
+        <h3 style="margin-top: 2rem;">4. Stump and cleanup.</h3>
+        <p>
+          Stump can be cut flush or ground below grade depending on what
+          you&rsquo;re doing with the space afterwards. Chips removed, brush
+          raked, log lengths stacked if you want firewood. We blow the driveway
+          clean before we leave.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Typical Cardinia Shire removals (and what they cost).</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>$800&ndash;$1,800:</strong> Small backyard wattle, peppercorn or fruit tree, 4&ndash;8m, easy access, no targets. Half a day.</li>
+          <li><strong>$1,800&ndash;$3,500:</strong> Mid-sized gum or oak 8&ndash;15m, sectional climb next to a house, EWP access available. Full day.</li>
+          <li><strong>$3,500&ndash;$7,500:</strong> Mature blue gum or messmate 15&ndash;25m, climbed sectional, rigging required, tight clearance. 1&ndash;2 days.</li>
+          <li><strong>$7,500&ndash;$15,000:</strong> Hazardous mature tree, powerline proximity, crane required, multi-day. Often follows a storm-callout assessment.</li>
+          <li><strong>+ $150&ndash;$500:</strong> Stump grinding (separate visit unless quoted bundled).</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">What drives the price.</h3>
+        <ul>
+          <li><strong>Height &amp; trunk diameter</strong> &mdash; bigger trees = more sections, more rigging time.</li>
+          <li><strong>Targets within drop zone</strong> &mdash; house, shed, fence, pool, garden bed = more rigging, slower work.</li>
+          <li><strong>Access for chipper and EWP</strong> &mdash; if we can get a truck within 10m, we save 30&ndash;50% on climbing time.</li>
+          <li><strong>Powerline proximity</strong> &mdash; No-Go Zone work requires accredited climbers and sometimes power isolation.</li>
+          <li><strong>Species and condition</strong> &mdash; dead/decayed trees are higher-risk and priced accordingly.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Get a fixed-price removal quote.</h2>
+        <p>Free on-site assessment within 2&ndash;5 working days. Storm emergencies same day.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

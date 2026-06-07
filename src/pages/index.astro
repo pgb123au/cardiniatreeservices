@@ -1,0 +1,316 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does tree removal cost in Pakenham and Cardinia Shire?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tree removal in Cardinia Shire ranges from around $800 for a small backyard wattle up to $15,000 for a mature 25m+ blue gum next to a house. Most domestic removals sit between $1,500 and $4,500. The price drivers are height, trunk diameter, proximity to buildings and powerlines, whether we can drop it whole or have to climb and section it down, and access for the chipper. Lopping or formative pruning is usually $300–$1,500. Stump grinding is $150–$500 depending on diameter and root spread. Storm callouts are $400–$1,800. Land clearing for a build site runs $2,000–$8,000 per acre. Every quote is fixed-price, written, and free." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a permit to remove a tree in Cardinia Shire?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends on three things: the tree, the zone, and the overlay. Cardinia Shire has a Significant Tree Register, and any tree on it needs a planning permit before pruning or removal — fines for unauthorised removal start at $9,000+. Properties inside a Vegetation Protection Overlay (VPO) or Environmental Significance Overlay (ESO) need a permit for native trees over 10m or with trunk diameter >40cm at 1m height. Dead, dangerous and pest-host trees can usually be removed without a permit under the standard exemptions (10/30 rule near dwellings, hazardous-tree assessment). We check the council mapping for every job at the quote stage and lodge any required permit on your behalf." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is AS 4373 pruning and why does it matter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "AS 4373-2007 is the Australian Standard for pruning of amenity trees — it's what a Cert IV arborist follows when removing a branch correctly. Cuts are made just outside the branch collar (not flush with the trunk, not leaving a stub) so the tree can compartmentalise the wound and seal it. No more than 25% of the live canopy is removed in a single growth season. Branches over 50mm are three-cut undercut to prevent bark tearing. The opposite of AS 4373 is 'topping' or 'lopping' — flat-cutting the head off a tree — which gardeners with chainsaws still do, and which destroys the tree's structural integrity, kills it slowly, and creates dangerous epicormic regrowth that drops limbs in storms 5–10 years later. We never top healthy trees." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do 24/7 emergency storm response in Cardinia Shire?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — we run a 24-hour storm response service across all of Cardinia Shire. Standard call-out window for a tree on a house, car or driveway is 60–120 minutes for Pakenham, Officer and Beaconsfield; 90–180 minutes for the eastern shire (Bunyip, Garfield, Tonimbuk). After major storm events (the spring/summer north-westerlies that bring down half-rotten limbs across the shire), we triage by danger level — anything on a house or blocking access first, hung-up 'widow-makers' second, garden cleanup last. Insurance documentation provided for every emergency callout. Phone (03) 9003 0108 — out of hours rings the duty arborist." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why shouldn't I just let a gardener 'lop' my tree?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Because gardeners who 'lop' trees — flat-cut the top off — aren't pruning, they're disfiguring. A topped gum or oak grows back as a thicket of weakly-attached epicormic shoots from the cut, all attached to the trunk by paper-thin bark unions. Within 5–10 years those shoots are 4–8m long and drop unpredictably in storms. The tree also routes most of its photosynthesis into new shoots instead of root-defence, so decay enters at the cut and the trunk hollows over the next decade. We see the consequences every week on storm callouts: trees that were 'lopped' to be safer are exactly the ones that fall. A Cert IV arborist will either prune properly to AS 4373 or recommend removal if the tree's structure is already compromised. Lopping is the worst of both worlds." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you grind stumps below grade so I can replant or pave over them?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Standard stump grind is 100–150mm below grade, which is enough for re-turfing, garden beds and most landscaping. For pavers, concrete slabs, footings or pool work we grind 300mm+ below, and we follow the major lateral roots out 1–2m and grind those too — otherwise the root mass rots over 5–10 years and creates voids that crack pavers. We bring two grinders: a 30cm narrow-access grinder that fits through a 900mm gate, and a 76cm tow-behind for big paddock stumps. Cleanup includes removing the grindings or backfilling with topsoil at your choice." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you insured? Are your climbers qualified?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes to both. We carry $20 million public liability and full WorkCover. Our climbers hold Cert IV in Arboriculture (minimum), Working at Heights, EWP licences and chainsaw cross-cut and tree-felling tickets. Every job has a documented Job Safety Analysis and exclusion zone before the first cut. Insurance certificates and qualifications are provided on request — and you should ask any tree contractor for them before they bring a chainsaw onto your block. The cheap cash-job operators on Facebook Marketplace usually have neither, and if one of them puts a tree through your neighbour's roof, it's your problem." }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can you get to a fallen tree?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For a genuine emergency (tree on house, tree blocking driveway, tree on car, hung-up limb over a footpath) we aim for 60–120 minutes anywhere in central Cardinia Shire — Pakenham, Officer, Beaconsfield, Cardinia Lakes, Heritage Springs, Berwick edge. The eastern shire (Bunyip, Garfield, Nar Nar Goon, Tynong, Tonimbuk) is 90–180 minutes. After a major weather event (the type that drops 50+ trees across the shire in a night) we triage by danger level and may run a 24–48 hour queue for non-emergency garden cleanup. Phone (03) 9003 0108 — calls go to the duty arborist after hours, not a call centre." }
+    }
+  ]
+};
+---
+<Layout
+  title="Cardinia Tree Services | Tree Removal, Lopping & Stump Grinding | (03) 9003 0108"
+  description="Tree removal, lopping, stump grinding and 24/7 storm response across Pakenham, Officer, Beaconsfield, Cardinia Lakes & all of Cardinia Shire. Cert IV arborists. AS 4373 pruning. $20M insured. Free fixed-price quote.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+<style>
+  /* Image-banner integration (added 2026-06-04) */
+  .hero {
+    position: relative;
+    background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.28)), url('/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  .hero h1,
+  .hero .hero-sub,
+  .hero .hero-eyebrow,
+  .hero .hero-trust,
+  .hero .accent {
+    color: #fff;
+  }
+  .hero .accent {
+    color: #fcd34d;
+  }
+  .hero .hero-eyebrow {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .hero .hero-trust {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .image-banner {
+    width: 100%;
+    max-height: 460px;
+    overflow: hidden;
+    margin: 0;
+  }
+  .image-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+    display: block;
+  }
+  .image-banner figcaption {
+    background: rgba(15, 23, 42, 0.92);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.85rem 1.25rem;
+    text-align: center;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+</style>
+
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Pakenham &middot; Officer &middot; Beaconsfield &middot; All Cardinia Shire</span>
+      <h1>The gum tree on your fence line just dropped a limb. <span class="accent">We&rsquo;re an hour away.</span></h1>
+      <p class="hero-sub">
+        Tree removal, lopping &amp; stump grinding across Pakenham, Officer,
+        Beaconsfield &amp; all of Cardinia Shire. 24/7 storm response when the
+        north-westerlies bring half a tree down on your driveway. Cert IV
+        arborists, AS 4373 pruning, $20M public liability.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed-price quote</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>60&ndash;120 min</strong>Storm callout, central shire</div>
+        <div><strong>$1K&ndash;$15K</strong>Typical removal range</div>
+        <div><strong>AS 4373</strong>Pruning standard, every job</div>
+        <div><strong>$20M</strong>Public liability insurance</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we do</span>
+      <h2>Five things, done properly.</h2>
+      <p class="section-lead">
+        Tree removal, lopping &amp; pruning to AS 4373, stump grinding to
+        replantable depth, 24/7 storm response, and full block clearing for
+        build sites. No mowing, no hedging, no &ldquo;handyman&rdquo; work &mdash;
+        just the chainsaw end of the trade, done by climbers who know what
+        they&rsquo;re looking at.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/tree-removal/">
+          <div class="svc-icon" aria-hidden="true">&#9876;</div>
+          <h3>Tree removal</h3>
+          <p>Full removal including stump. Climbed, sectional, EWP or spider-lift access for tight blocks. From a 6m wattle to a 30m blue gum next to powerlines. $800&ndash;$15,000.</p>
+          <span class="svc-link">See tree removal &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/tree-lopping/">
+          <div class="svc-icon" aria-hidden="true">&#9889;</div>
+          <h3>Tree lopping &amp; pruning</h3>
+          <p>Crown thinning, deadwooding, weight reduction, formative pruning, clearance pruning. AS 4373 compliant cuts. We don&rsquo;t &ldquo;top&rdquo; healthy trees. $300&ndash;$1,500.</p>
+          <span class="svc-link">See lopping &amp; pruning &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/stump-grinding/">
+          <div class="svc-icon" aria-hidden="true">&#9881;</div>
+          <h3>Stump grinding</h3>
+          <p>Below-grade grinding for replanting, paving, slabs or pool work. Narrow-access 30cm grinder fits through a side gate. Lateral roots followed where needed. $150&ndash;$500.</p>
+          <span class="svc-link">See stump grinding &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/storm-response/">
+          <div class="svc-icon" aria-hidden="true">&#9888;</div>
+          <h3>Storm response (24/7)</h3>
+          <p>Tree on house, car, driveway or fence. Hung-up &ldquo;widow-maker&rdquo; limbs. 60&ndash;120 min response central shire, 24/7 every day of the year. Insurance docs provided. $400&ndash;$1,800.</p>
+          <span class="svc-link">See storm response &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/land-clearing/">
+          <div class="svc-icon" aria-hidden="true">&#9650;</div>
+          <h3>Land clearing</h3>
+          <p>Build-site clearing for new house blocks, subdivisions or paddock revival. Tree drop, understorey, chipping, mulch removal. Permits checked before any chainsaw fires. $2K&ndash;$8K/acre.</p>
+          <span class="svc-link">See land clearing &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/result.jpg" alt="Stump cleanly ground level with the grass after removal" loading="lazy" decoding="async" />
+    <figcaption>AQF Level 3 arborists, $20M public liability insured.</figcaption>
+  </figure>
+
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why a Cardinia arborist (not a bloke with a chainsaw)</span>
+      <h2>Three things every Cardinia tree job has to get right.</h2>
+      <div class="divider"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 60rem;">
+        <div>
+          <h3>The council mapping check.</h3>
+          <p>
+            Cardinia Shire has a <strong>Significant Tree Register</strong>, plus
+            Vegetation Protection Overlays (VPO), Environmental Significance
+            Overlays (ESO) and Bushfire Management Overlays scattered across the
+            shire. Cut a protected tree without a planning permit and the fines
+            start at $9,000 &mdash; sometimes much more if the tree is on the
+            register. Most weekend operators don&rsquo;t check. We check the
+            council mapping at the quote stage and tell you the moment we see
+            anything restrictive. Where a permit is needed we lodge it for you.
+          </p>
+        </div>
+        <div>
+          <h3>The structural assessment, before the climb.</h3>
+          <p>
+            Before any cuts go in on a mature gum, we walk the tree and look
+            for <strong>codominant stems with bark inclusions, included
+            branches, fungal brackets, basal cavities, recent cracking, lean
+            change since last storm</strong>. Half the trees that fail in
+            spring storms had visible defects six months earlier. A 15-minute
+            structural assessment up front is the difference between &ldquo;we
+            pruned it&rdquo; and &ldquo;we removed it before it removed the
+            shed&rdquo;. We tell you what we see honestly &mdash; we don&rsquo;t
+            recommend removal when a target-prune will do, and we don&rsquo;t
+            prune when the tree is past saving.
+          </p>
+        </div>
+        <div>
+          <h3>The cut that lets the tree heal &mdash; not rot.</h3>
+          <p>
+            A correct AS 4373 pruning cut sits just outside the branch collar
+            (the slight bulge where the branch meets the trunk). It leaves the
+            collar intact so the tree can compartmentalise the wound and seal
+            it. A flush cut tears into the trunk and lets decay straight in. A
+            stub cut leaves a dead spike that rots back into the trunk over
+            5&ndash;10 years. The &ldquo;topping&rdquo; cut &mdash; flat across
+            the top of the tree &mdash; is the worst of all: it destroys the
+            tree, creates dangerous epicormic regrowth, and is exactly what
+            you&rsquo;ll see being called &ldquo;tree pruning&rdquo; on
+            Facebook Marketplace. We never top healthy trees.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we work.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        Full Cardinia Shire coverage &mdash; Pakenham and the growth corridor in
+        the west, Beaconsfield and Officer in the south, Cardinia Lakes and
+        Heritage Springs estates, plus the rural east out toward Bunyip State
+        Forest and Cardinia Reservoir. Mature gums and storm response are our
+        regular weekly work.
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+        <span class="area-pill area-pill-static">Berwick edge</span>
+        <span class="area-pill area-pill-static">Nar Nar Goon</span>
+        <span class="area-pill area-pill-static">Tynong</span>
+        <span class="area-pill area-pill-static">Bunyip</span>
+        <span class="area-pill area-pill-static">Garfield</span>
+        <span class="area-pill area-pill-static">Lakeside</span>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/detail.jpg" alt="Arborist&#x27;s chainsaw mid-cut close-up" loading="lazy" decoding="async" />
+    <figcaption>Council permit handled. Same-day storm response.</figcaption>
+  </figure>
+
+
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-eyebrow">How it works</span>
+      <h2>From phone call to clean site &mdash; 5 stages.</h2>
+
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Phone or web</h3><p>Tell us what you&rsquo;re looking at. Storm emergency? We&rsquo;re moving while we&rsquo;re still on the call.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Site visit</h3><p>Free on-site quote within 2&ndash;5 working days (storm response same-day). We walk the tree, check council mapping, give honest options.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Fixed quote + permits</h3><p>Written fixed-price quote. If a planning permit is needed (significant tree, VPO/ESO), we lodge it for you.</p></div>
+        <div class="step"><div class="step-num">4</div><h3>The work</h3><p>JSA &amp; exclusion zone. Climbers up, EWP in if access allows. Chipper, crane or spider-lift as needed. Small jobs same-day, big removals 1&ndash;3 days.</p></div>
+        <div class="step"><div class="step-num">5</div><h3>Clean site</h3><p>Chipped, swept and raked. Mulch removed or left at your option. Stump ground below grade if quoted. Final walk-through.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Need a tree gone? Storm just rolled through?</h2>
+        <p>Free fixed-price quote within 2&ndash;5 working days. 24/7 emergency line for storm work.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Articles &amp; guides for Cardinia Shire</h2>
+      <p>Practical reading from our jobs in Cardinia Shire &mdash; what we charge, what to watch for, when a callout is worth it.</p>
+      <ul class="guides-list">
+          <li><a href="/as4970-protection-cardinia/">AS 4970 tree protection on a Cardinia construction site</a></li>
+          <li><a href="/council-permit-cardinia/">Council permit for tree removal in Cardinia Shire</a></li>
+          <li><a href="/storm-response-cardinia/">Storm tree-down — 24-hour Cardinia response</a></li>
+          <li><a href="/stump-grinding-cardinia/">Stump grinding depth for Cardinia builds</a></li>
+      </ul>
+    </div>
+  </section>
+
+</Layout>

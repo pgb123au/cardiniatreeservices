@@ -1,0 +1,138 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Free Tree Service Quote | Pakenham & Cardinia Shire | (03) 9003 0108"
+  description="Get a free on-site quote for tree removal, lopping, stump grinding, storm response or land clearing across Pakenham, Officer, Beaconsfield, Cardinia Lakes, Heritage Springs and all of Cardinia Shire. Fixed-price written quote within 2–5 working days."
+  canonical="https://cardiniatreeservices.com.au/quote/">
+
+  <section class="hero" style="padding: 2.5rem 0 3rem;">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Free quote</span>
+      <h1>Free on-site tree services quote.</h1>
+      <p class="hero-sub">
+        Tell us what you&rsquo;re looking at. We&rsquo;ll come on-site for a
+        free assessment, walk the tree, check Cardinia Shire planning mapping
+        for any protection overlays, and give you a fixed-price written quote
+        within 2&ndash;5 working days. Storm emergencies same day &mdash; phone
+        the main number, the duty arborist answers.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="form-wrap">
+        <div class="form-card">
+          <form name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks/">
+            <input type="hidden" name="form-name" value="quote" />
+            <p style="display:none;"><label>Don&rsquo;t fill this out: <input name="bot-field" /></label></p>
+
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="04xx xxx xxx" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="suburb">Suburb / postcode</label>
+            <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required placeholder="e.g. Pakenham 3810, Beaconsfield 3807, Officer 3809" />
+
+            <label for="service">What kind of work?</label>
+            <select id="service" name="service">
+              <option value="not-sure">Not sure — want a recommendation</option>
+              <option value="removal">Tree removal (full removal incl stump)</option>
+              <option value="lopping">Lopping / pruning / crown work</option>
+              <option value="stump-grinding">Stump grinding (tree already removed)</option>
+              <option value="storm-response">Storm damage — urgent</option>
+              <option value="land-clearing">Land clearing / building-pad clear</option>
+              <option value="hazard-assessment">Hazardous tree assessment</option>
+              <option value="multiple">Multiple jobs on the block</option>
+            </select>
+
+            <label for="size">Tree size (rough)</label>
+            <select id="size" name="size">
+              <option value="not-sure">Not sure</option>
+              <option value="small">Small (under 5m)</option>
+              <option value="medium">Medium (5–15m)</option>
+              <option value="large">Large (15–25m)</option>
+              <option value="very-large">Very large (over 25m)</option>
+              <option value="multiple">Multiple trees</option>
+            </select>
+
+            <label for="urgency">How urgent?</label>
+            <select id="urgency" name="urgency">
+              <option value="emergency">Storm emergency — tree on house/car/driveway</option>
+              <option value="this-week">This week if possible</option>
+              <option value="this-month">This month</option>
+              <option value="next-3-months">Next 2–3 months</option>
+              <option value="planning">Planning ahead, no rush</option>
+            </select>
+
+            <label for="access">Access for chipper / EWP?</label>
+            <select id="access" name="access">
+              <option value="not-sure">Not sure — check at site visit</option>
+              <option value="easy">Easy — truck can reach the tree</option>
+              <option value="side-gate">Tight — side-gate access only (under 900mm)</option>
+              <option value="backyard">Rear of property, no truck access</option>
+              <option value="acreage">Acreage / paddock</option>
+            </select>
+
+            <label for="protection">Any tree-protection concerns?</label>
+            <select id="protection" name="protection">
+              <option value="no">No — pretty sure it's not protected</option>
+              <option value="check">Please check council mapping for me</option>
+              <option value="vpo">Tree is inside a VPO/ESO overlay</option>
+              <option value="significant">Tree may be on Significant Tree Register</option>
+              <option value="powerlines">Tree is near powerlines</option>
+            </select>
+
+            <label for="message">Any details? (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tree species if known, what's near the tree (house, fence, pool, neighbour), any recent storm damage, budget range, etc."></textarea>
+
+            <button class="btn btn-primary btn-block" type="submit">Send my quote request</button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--c-muted);">We reply within 1 business day. Free, no obligation. Storm emergencies — call the main number.</p>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Prefer to talk?</h3>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9742;</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+61390030108">(03) 9003 0108</a>
+              <p style="font-size:0.85rem; color:var(--c-muted); margin:0;">Mon–Sat 7am–6pm &middot; 24/7 storm callout</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9978;</span>
+            <div>
+              <strong>Service area</strong>
+              <p style="margin:0;">Full Cardinia Shire — Pakenham, Officer, Beaconsfield, Cardinia Lakes, Heritage Springs, Pakenham East, Lakeside, plus the rural east out toward Bunyip State Forest.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#10004;</span>
+            <div>
+              <strong>What you&rsquo;ll get</strong>
+              <ul style="margin:0.4rem 0 0; padding-left:1rem; font-size:0.95rem; color:var(--c-text);">
+                <li>Free on-site assessment + structural walk-around</li>
+                <li>Cardinia Shire planning-mapping check (VPO/ESO/Significant Tree)</li>
+                <li>Honest tree-by-tree options &mdash; prune vs remove</li>
+                <li>Fixed-price written quote within 2&ndash;5 working days</li>
+                <li>$20M public liability, Cert IV arborists, AS 4373 pruning</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

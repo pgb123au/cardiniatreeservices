@@ -1,0 +1,190 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "How fast can a Cardinia arborist actually get to a tree-on-house at 2am?", "acceptedAnswer": { "@type": "Answer", "text": "Phone (03) 9003 0108 — it rings to the duty arborist's mobile, not a call centre. From the call to wheels rolling is usually under 20 minutes. Travel time inside the central shire (Pakenham, Officer, Beaconsfield, Cardinia Lakes, Heritage Springs) is 25–40 minutes off-peak. Up the hills (Beaconsfield Upper, Cockatoo, Emerald, Gembrook) adds 15–25 minutes because the Princes Highway exits and the climbing roads slow the truck. Out to Bunyip, Garfield or Nar Nar Goon is 45–70 minutes. So a worst-case door-to-tree on a 2am call to Gembrook is about 90 minutes. After a major weather event with 30+ trees down across the shire we triage — tree-on-dwelling and road-blocking calls go first, everything else queues to morning." } },
+    { "@type": "Question", "name": "What is 'make-safe' and why isn't the tree just removed in one go?", "acceptedAnswer": { "@type": "Answer", "text": "Make-safe is the urgent first-pass — get the load off the structure, stop further damage, restore access. We cut the tree off the roof, secure any limbs still hanging, tarp the breach where it punctured the roof, and clear the driveway so emergency services and the assessor can get in. We do NOT remove the whole tree on the make-safe visit. Two reasons. First, insurance: the loss assessor needs to physically see the tree on the dwelling to assess the claim, and a clean before-photo is worth ten witness statements. Second, daylight: full removal of a mature gum involves rigging, climbing or a crane, and rushing that at 3am in the rain with adrenaline running is how people die. Make-safe at night, full removal in daylight." } },
+    { "@type": "Question", "name": "Why does the insurance assessor want the un-touched photo before I tidy up?", "acceptedAnswer": { "@type": "Answer", "text": "Because the photo proves three things at once: (1) the tree actually fell, not just lost a branch; (2) it landed on the insured structure, not on the lawn next to it; and (3) the structural damage you're claiming was caused by the tree, not pre-existing. Insurers see fraud attempts every storm season. If the tree is already cut into firewood when the assessor arrives, the claim slows down, gets queried, and sometimes gets reduced. Take wide-angle photos from at least three positions before anyone touches anything. We take ours on arrival as part of the standard storm pack — date-stamped, GPS-tagged, copied to you that night." } },
+    { "@type": "Question", "name": "What is the typical full-removal window after a Cardinia storm?", "acceptedAnswer": { "@type": "Answer", "text": "Make-safe is the same night or first thing next morning. Full removal of the rest of the tree usually happens in a 24–48 hour window after make-safe, once the insurance assessor has been on site and approved the scope. For a tree fully on a dwelling that needs a crane, the crane booking is the longest pole — we run them dry within Cardinia in storm season, so the crane lift can occasionally push to 72 hours. For sub-crane jobs (climbing and rigging only) we book the full removal at the make-safe visit and quote it on the spot — typically next-day. The roof tarp from make-safe is rated for 48-hour wet weather, which covers the gap." } }
+  ]
+};
+---
+<Layout
+  title="Storm tree-down 24h response Cardinia Shire | Tree on house, car or road | (03) 9003 0108"
+  description="Cardinia Shire 24/7 storm tree-down response — Pakenham, Officer, Beaconsfield Upper, Cockatoo, Emerald, Gembrook, Bunyip, Garfield. Make-safe at night, insurance photo protocol, 24–48 hour full removal."
+  canonical="https://cardiniatreeservices.com.au/storm-response-cardinia/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Emergency &middot; 24/7 across all of Cardinia Shire</span>
+      <h1>Storm tree-down &mdash; <span class="accent">24-hour Cardinia response</span>.</h1>
+      <p class="hero-sub">
+        Westerly bringing down a gum on the carport at 2am? Limb through the
+        kitchen roof in Beaconsfield Upper? Big bluegum across the Princes
+        Highway service road at Bunyip? Phone (03) 9003 0108. The duty
+        arborist answers &mdash; not a call centre &mdash; and is rolling
+        within 20 minutes. Make-safe overnight, insurance photo on arrival,
+        full removal 24&ndash;48 hours.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/services/storm-response/">Storm service detail</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">The protocol</span>
+      <h2>What happens between your call and the chainsaw.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          The reason Cardinia Shire storm callouts go wrong is almost never
+          the cutting &mdash; it&rsquo;s what happens in the first ten
+          minutes. We work to a fixed protocol so the people on site stay
+          alive, the insurance claim stays clean, and the make-safe step
+          doesn&rsquo;t accidentally torpedo the rest of the job.
+        </p>
+        <h3 style="margin-top: 2rem;">Step 1. Phone triage (under 5 minutes).</h3>
+        <p>
+          Duty arborist on the phone asks five things: (a) what&rsquo;s the
+          tree on &mdash; house, car, fence, road, just the lawn; (b) is
+          anyone under it or in the affected room; (c) is there power
+          touching the tree or the structure; (d) what suburb and street; (e)
+          your insurer if you know it. If there&rsquo;s power involved the
+          first call from us is to AusNet on 13 17 99 or Powercor on 13 22 33
+          to isolate the line &mdash; we will not touch a tree with a live
+          wire across it.
+        </p>
+        <h3 style="margin-top: 2rem;">Step 2. Wheels rolling, photo brief sent.</h3>
+        <p>
+          While we&rsquo;re driving we text you a 30-second photo brief:
+          three wide shots from different angles, do not move anything, stay
+          out from under the tree, do not stand directly inside the room the
+          tree penetrated (roof loads can shift), do not try to pull a
+          hung-up limb down with a rope from the ground. Most insurance
+          downgrades start when someone &ldquo;just tidied the small
+          bits&rdquo; before we arrived.
+        </p>
+        <h3 style="margin-top: 2rem;">Step 3. Arrival &mdash; site assessment before tools out.</h3>
+        <p>
+          First action on site is a full walk-around, photo set, and exclusion
+          zone marked with bunting. Only then do we identify the make-safe
+          objective: get the load off the structure, stabilise anything
+          still loaded, restore access, tarp any roof penetration. The
+          rigging plan gets written on the site sheet and read out to every
+          crew member before a cut.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">The Cardinia-specific bits</span>
+      <h2>Why Cardinia storm work is its own beast.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Cardinia Shire is two completely different storm jobs depending on
+          where you are. The growth-corridor flats &mdash; Pakenham, Officer,
+          Cardinia Lakes, Heritage Springs, Beaconsfield &mdash; are mostly
+          planted street and garden trees on small blocks. Failures here are
+          usually single-limb drops on suburban dwellings, dealt with by a
+          climbing crew and a chipper.
+        </p>
+        <p>
+          The hills district &mdash; Beaconsfield Upper, Cockatoo, Emerald,
+          Gembrook, Avonsleigh, Macclesfield, Nar Nar Goon North &mdash; is a
+          different animal. Mature Mountain Ash, Messmate Stringybark and
+          Manna Gum on steep blocks with one access road, often a BAL-29 or
+          BAL-40 bushfire rated property where the trees are part of the
+          defendable space calculation. When one of those goes over, the
+          rigging plan is different (steep ground, drop into bush is rarely
+          available because of native veg overlays), the access is harder,
+          and the load is bigger &mdash; a mature Mountain Ash on a hills
+          house is often a crane lift, not a climb.
+        </p>
+        <p>
+          The rural east &mdash; Bunyip, Garfield, Tynong, Tonimbuk, Iona
+          &mdash; runs to old farm windbreaks of Cypress and Sugar Gum, plus
+          the State Forest edge. Big mature Sugar Gums dropping on machinery
+          sheds is the classic Bunyip job. Access by truck is usually fine;
+          the challenge is the size of the wood and the disposal &mdash;
+          we&rsquo;ll often run the chipper into a paddock with the owner&rsquo;s
+          permission and leave mulch on site to save tipping fees.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Frequently asked</span>
+      <h2>Cardinia storm callout questions.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+
+        <h3>How fast can you actually get to my place at 2am?</h3>
+        <p>
+          Duty arborist answers the phone (not a call centre), and is rolling
+          inside 20 minutes. Travel: central shire 25&ndash;40 minutes off-peak,
+          hills district add 15&ndash;25 minutes, rural east 45&ndash;70
+          minutes. Worst-case door-to-tree on a Gembrook 2am call is about 90
+          minutes. After a major weather event we triage tree-on-dwelling and
+          road-blocking first.
+        </p>
+
+        <h3>Why don&rsquo;t you just remove the whole tree on the first visit?</h3>
+        <p>
+          Make-safe at night, full removal in daylight. The insurance
+          assessor needs to see the tree on the structure to assess the
+          claim; rushing a full rigged removal in the dark and the rain is
+          how people get hurt. The make-safe tarp is rated for 48 hours of
+          wet weather, which covers the gap to a daylight removal.
+        </p>
+
+        <h3>What should I do before you arrive?</h3>
+        <p>
+          Wide-angle photos from three positions, do not touch or move
+          anything, stay out from under the tree and the affected room, do
+          not pull a hung-up limb with a rope from the ground, isolate power
+          if a line is involved (we&rsquo;ll call AusNet or Powercor on your
+          behalf if you give us the address).
+        </p>
+
+        <h3>Will my home insurance cover the storm work?</h3>
+        <p>
+          Make-safe yes &mdash; the urgent work required to stop further
+          damage is covered under almost every home &amp; contents policy in
+          Australia. Full removal of the rest of the tree, and any
+          non-storm-related work, is usually owner-paid. We split the invoice
+          cleanly into &ldquo;make-safe (insurance)&rdquo; and &ldquo;further
+          work (owner)&rdquo; so the claim assessor isn&rsquo;t guessing.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Tree down right now?</h2>
+      <p style="max-width: 50rem; margin: 1rem auto;">
+        Call straight through. Duty arborist&rsquo;s mobile, 24/7, every
+        day of the year including Christmas and Boxing Day.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108 now</a>
+        <a class="btn btn-ghost" href="mailto:quotes@cardiniatreeservices.com.au">Email after the storm</a>
+      </div>
+    </div>
+  </section>
+</Layout>

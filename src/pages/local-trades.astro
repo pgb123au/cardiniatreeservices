@@ -1,0 +1,253 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who else does Cardinia Tree Services coordinate with on a job?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Builders (for new-build tree-protection plans and post-build stump grinding), landscapers (for stump grind below grade so they can re-turf cleanly), fencers (where a tree has come down on a fence and the fence needs replacing after we clear), AusNet and Powercor (for powerline-proximity tree work), insurance assessors (for storm-damage claims), and Cardinia Shire planning officers (when a removal needs a permit under VPO/ESO controls)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I get the arborist in before the builder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Always — before slab. Tree-protection zones for retained trees should be fenced (per AS 4970-2009) before any heavy machinery comes onto the block. Removal of trees inside the slab footprint should happen weeks ahead of the slab pour, not the day before. Stumps that will sit under the slab need grinding to excavation depth or removal by the excavator during earthworks. A 15-minute conversation between us and your builder at design stage saves weeks of program delay."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a Cardinia Shire planning permit to remove a tree?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sometimes. The trigger is the planning overlay on the block. Vegetation Protection Overlay (VPO) and Environmental Significance Overlay (ESO) require a planning permit for native trees over thresholds (typically 10m height or 40cm trunk diameter). Significant Tree Register trees always need a planning permit. Bushfire Management Overlay (BMO) blocks have the 10/30 right (clear within 10m of dwelling, modified vegetation 30m out) without permit. We check the Cardinia Shire planning mapping for every quote and tell you the answer before we touch anything."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my tree fell on the neighbour's property?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually your problem to make safe (under common-law nuisance principles) but the neighbour's insurance for the damaged structure. We'll do the make-safe work for whoever calls first, document everything for the insurance file, and provide separate invoices if your costs and the neighbour's structural repair are getting paid by different parties. Boundary disputes about trees that span the fence — talk to us first; we don't take sides, we just describe the tree honestly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I check a Cardinia tree contractor's qualifications?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask for (1) Cert IV in Arboriculture certificate, (2) Public Liability insurance certificate ($20M minimum for residential work), (3) WorkCover certificate, and (4) chainsaw + tree-felling tickets for the operator. We carry all four and provide certificates on request. Tree contractors don't hold a state 'licence' the way builders do (no equivalent of VBA for arboriculture in Victoria), so qualifications and insurance are the only check available. The cash operators on Facebook Marketplace typically have neither — and if one of them puts a tree through your neighbour's roof, it's your problem, not theirs."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Local Cardinia Tree Service Coordination | Builders, Landscapers, Insurance"
+  description="The Cardinia Shire trades and authorities we coordinate with on tree jobs — builders, landscapers, fencers, insurance assessors, Powercor/AusNet for powerlines, plus council planning references for every homeowner."
+  canonical="https://cardiniatreeservices.com.au/local-trades/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Trades and authorities we work with</span>
+      <h1>Local <span class="accent">Cardinia coordination</span> on tree jobs.</h1>
+      <p class="hero-sub">
+        Most tree jobs touch other trades and authorities &mdash; the builder
+        for a new-build, the landscaper for the re-turf, the fencer for the
+        boundary, AusNet or Powercor for powerline proximity, the insurance
+        assessor after a storm. Below are the references we point Cardinia
+        Shire homeowners to constantly, plus the council and standards
+        documents every homeowner should know about.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Free tree services quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">In-network coordination</span>
+      <h2>The trades and authorities we coordinate with most.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <h3>Builders &amp; landscapers (new build &amp; renovation).</h3>
+        <p>
+          Most new-build jobs in Pakenham, Cardinia Lakes, Heritage Springs and
+          Officer Estate need three coordinated tree-work touchpoints: (1)
+          pre-slab clearing and tree-protection-zone fencing (AS 4970-2009),
+          (2) post-build stump grinding before the landscaper re-turfs, (3)
+          formative pruning of the advanced ornamentals the landscaper planted
+          in years 1&ndash;3. We coordinate timing with the builder&rsquo;s
+          slab program so tree work doesn&rsquo;t delay the build.
+        </p>
+
+        <h3 style="margin-top:2rem;">AusNet &amp; Powercor (powerline-proximity tree work).</h3>
+        <p>
+          Trees within the No-Go Zone of energised distribution lines
+          (around 6.4m for high-voltage, less for SWER lines) legally
+          require a powerline-trained climber, and sometimes a network
+          isolation. <strong>AusNet Services</strong> covers the eastern shire;
+          <strong>Powercor</strong> covers most of the central and western
+          shire. Sometimes the network operator will prune trees as a network
+          maintenance item; sometimes they require an accredited arborist to
+          do it under isolation. We hold the relevant powerline tickets and
+          coordinate the isolation when needed.
+        </p>
+
+        <h3 style="margin-top:2rem;">Insurance assessors (post-storm work).</h3>
+        <p>
+          When a tree has caused property damage, your insurer wants
+          documentation: before-photos, written incident report, certificate
+          of insurance and arborist qualifications, itemised &ldquo;make-safe
+          vs further work&rdquo; invoice split. We work regularly with AAMI,
+          Allianz, NRMA, RACV, Suncorp, Budget Direct and Youi. Assessors can
+          call us directly on the main number if helpful.
+        </p>
+
+        <h3 style="margin-top:2rem;">Fencers (post-storm tree-on-fence).</h3>
+        <p>
+          Storm-damage tree work often involves a fence repair afterwards.
+          We clear the tree, photograph the fence damage for insurance, and
+          coordinate timing with a fencer for the replacement. The
+          neighbour-share of fence cost is governed by Victoria&rsquo;s
+          Fences Act 1968 &mdash; usually 50/50 for a boundary-line repair.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#f9fafb;">
+    <div class="section-inner">
+      <span class="section-eyebrow">Council, planning &amp; standards</span>
+      <h2>The regulatory references for Cardinia tree work.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <p>
+          We point homeowners to these resources constantly &mdash;
+          particularly the Cardinia Shire planning mapping, which has tripped
+          up more weekend tree operators than any other regulatory issue.
+        </p>
+        <ul style="margin-top:1rem;">
+          <li style="margin-bottom:0.75rem;">
+            <strong>Cardinia Shire Council &mdash; planning mapping</strong>
+            &mdash; the authoritative source for VPO, ESO, BMO, Heritage
+            Overlay and Significant Tree Register entries on any block.
+            <a href="https://www.cardinia.vic.gov.au/" target="_blank" rel="external noopener">cardinia.vic.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Significant Tree Register</strong> &mdash; named protected
+            specimen trees across the shire. Removal without permit attracts
+            $9,000+ fines. We check this for every quote.
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>AS 4373-2007 &mdash; Pruning of amenity trees</strong>
+            &mdash; the Australian Standard for arboricultural pruning cuts.
+            Sets the rules for branch-collar cuts, no flush cuts, no stubs,
+            no &ldquo;topping&rdquo;. Every prune we do follows AS 4373.
+            <a href="https://store.standards.org.au/" target="_blank" rel="external noopener">Standards Australia</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>AS 4970-2009 &mdash; Protection of trees on development sites</strong>
+            &mdash; the Australian Standard for tree-protection zones (TPZ),
+            structural root zones (SRZ) and protection fencing on building
+            sites. The standard the builder needs to follow to not kill the
+            retained boundary gum during construction.
+            <a href="https://store.standards.org.au/" target="_blank" rel="external noopener">Standards Australia</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Native Vegetation Removal Regulations 2017 (Victoria)</strong>
+            &mdash; state-level framework for native vegetation removal. Three
+            pathways (basic, intermediate, detailed) depending on extent. Larger
+            land-clearing jobs trigger biodiversity offset obligations.
+            <a href="https://www.environment.vic.gov.au/native-vegetation" target="_blank" rel="external noopener">environment.vic.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>CFA &mdash; vegetation management around the home</strong>
+            &mdash; for BMO blocks, the 10/30 vegetation-clearing rule explained
+            from the bushfire-safety perspective. Required reading for anyone
+            in Beaconsfield Upper, the rural east, or Bunyip State Forest fringe.
+            <a href="https://www.cfa.vic.gov.au/plan-prepare/your-property-and-bushfire" target="_blank" rel="external noopener">cfa.vic.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>WorkSafe Victoria &mdash; tree work safety</strong>
+            &mdash; sets the workplace safety rules for chainsaw operation,
+            climbing, EWP use and rigging. Tree contractors must comply. Ask
+            any contractor for their WorkCover certificate.
+            <a href="https://www.worksafe.vic.gov.au/" target="_blank" rel="external noopener">worksafe.vic.gov.au</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Frequently asked</span>
+      <h2>How Cardinia tree jobs sequence with the rest of the work.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <h3>Arborist before builder, or builder before arborist?</h3>
+        <p>
+          Arborist first. Tree-protection zones for retained trees need
+          fencing before any machinery comes on. Trees inside the slab
+          footprint need to be gone weeks before the slab pour. Stumps need
+          grinding or excavation-clearing before the slab. Getting this order
+          wrong costs weeks of build program.
+        </p>
+        <h3 style="margin-top:1.5rem;">When does the planning permit happen?</h3>
+        <p>
+          At the quote stage. We check Cardinia Shire planning mapping first,
+          tell you what&rsquo;s protected, and where a permit is needed we
+          lodge it on your behalf (6&ndash;10 weeks turnaround typical).
+          Removing a protected tree without permit attracts $9,000+ fines.
+        </p>
+        <h3 style="margin-top:1.5rem;">Do you charge for the quote?</h3>
+        <p>
+          No. The on-site visit, structural walk-around, planning-mapping
+          check and written quote are all free, no obligation. Storm
+          emergencies are obviously different &mdash; call the main number,
+          the duty arborist will be on the way before the call ends.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="section-inner" style="text-align:center;">
+      <h2 style="color:#fff;">Free tree services quote &mdash; honest Cardinia pricing.</h2>
+      <p style="opacity:0.85;max-width:50rem;margin:1rem auto 2rem;">
+        Tree removal, lopping, stump grinding, 24/7 storm response and land
+        clearing. Council planning mapping checked. Permits lodged where
+        needed. AS 4373 compliant cuts.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed-price quote</a>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-inner">
+      <h2>More guides &amp; articles</h2>
+      <p>Hand-picked reading from our jobs around the area.</p>
+      <ul class="guides-list">
+          <li><a href="/as4970-protection-cardinia/">AS 4970 tree protection on a Cardinia construction site</a></li>
+          <li><a href="/council-permit-cardinia/">Council permit for tree removal in Cardinia Shire</a></li>
+          <li><a href="/storm-response-cardinia/">Storm tree-down — 24-hour Cardinia response</a></li>
+          <li><a href="/stump-grinding-cardinia/">Stump grinding depth for Cardinia builds</a></li>
+      </ul>
+    </div>
+  </section>
+
+</Layout>

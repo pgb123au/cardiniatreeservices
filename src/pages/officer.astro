@@ -1,0 +1,117 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What tree work is most common in Officer?", "acceptedAnswer": { "@type": "Answer", "text": "Two distinct markets. Older Officer (along Princes Highway, Stoney Creek Road, Quarry Road) has established 700–1,200m² blocks with mature gums, pines and oaks — we do a lot of crown reduction, deadwooding and storm-damaged removal here. The Officer Estate and newer growth-corridor estates have boundary gums on new fence lines, plus stump grinding and formative pruning of freshly planted ornamentals." } },
+    { "@type": "Question", "name": "Are there protected trees in Officer?", "acceptedAnswer": { "@type": "Answer", "text": "Some — particularly older established areas where indigenous canopy trees (red gum, swamp gum, manna gum) have been retained on residential blocks. The Cardinia Shire planning mapping shows Vegetation Protection Overlay coverage in specific Officer streets. We check the mapping at the quote stage. Significant Tree Register entries also apply to some named specimens in Officer." } },
+    { "@type": "Question", "name": "Officer storm callout response time?", "acceptedAnswer": { "@type": "Answer", "text": "60–120 minutes for genuine emergencies — tree on a house, car or driveway. Officer is in our central coverage zone so it's usually closer to 60–90 minutes during business hours. After-hours storm callouts handled by the duty arborist via the main number." } },
+    { "@type": "Question", "name": "Can you handle mature pines in Officer?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Officer has a lot of 1960s-1980s radiata pines on older blocks — they grow to 30m+ and have a tendency to fail at the base when mature (shallow root plates, heart rot). We do these as climbed sectional removals or with a spider-lift where access allows. Pine timber tends to splinter under rigging so we use heavier rigging gear and slower lowering. $4,000–$8,500 typical." } },
+    { "@type": "Question", "name": "Do you work on Officer Estate new builds?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — building-pad clearing, boundary-tree removals, post-build stump grinding and formative pruning of advanced ornamentals. We work with several Cardinia builders and can coordinate timing with the slab pour and earthworks." } }
+  ]
+};
+---
+<Layout
+  title="Tree Removal & Lopping Officer | Cardinia Tree Services | (03) 9003 0108"
+  description="Tree removal, lopping, stump grinding & storm response in Officer. Mature pine & gum specialists. Officer Estate new builds. Council mapping checked. Free fixed-price quote."
+  canonical="https://cardiniatreeservices.com.au/officer/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Officer &middot; Officer Estate &middot; established + new build</span>
+      <h1>Tree services in <span class="accent">Officer</span>.</h1>
+      <p class="hero-sub">
+        Mature radiata pines and gums on older established Officer blocks,
+        boundary trees on Officer Estate new builds, formative pruning of
+        advanced ornamentals. Two markets in one suburb &mdash; we do both
+        weekly. Cert IV arborists, AS 4373 cuts, council mapping checked.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed-price quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Officer is two suburbs</span>
+      <h2>The Officer tree story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Established Officer &mdash; mature gums &amp; pines.</h3>
+        <p>
+          Period Officer (along Princes Highway, Old Princes Highway,
+          Stoney Creek Road, Quarry Road) typically sits on 700&ndash;1,200m&sup2;
+          blocks with mature trees: 30&ndash;40 year old eucalypts, 50&ndash;70
+          year old radiata pines, planted oaks, conifers, the occasional
+          mature liquidambar. Heavy lifting on these is the regular work:
+          crown reduction on the leaning ones, deadwooding the storm-vulnerable
+          ones, full removal when structure is past saving.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Officer Estate &mdash; new-build growth corridor.</h3>
+        <p>
+          The Officer Estate, Arena and surrounding new estates were built into
+          ex-paddock land. Boundary eucalypts from the original property lines
+          are now on fence lines between brand-new builds. We see these come
+          down in storms more than you&rsquo;d expect in the first 3&ndash;5
+          years post-construction &mdash; the soil profile disturbance from
+          earthworks compromises root anchorage. Pre-emptive deadwooding is
+          cheap insurance.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Radiata pine is its own conversation.</h3>
+        <p>
+          A lot of Officer has 30&ndash;40m radiata pines from the 1960s and
+          1970s. Pine has shallow root plates and is prone to heart-rot in
+          maturity &mdash; many of the pines that &ldquo;suddenly&rdquo; fall
+          in storms were already structurally compromised. We do these with
+          heavier rigging (pine splinters under load), often with a
+          spider-lift where the access allows. Removal $4K&ndash;$8.5K
+          typical.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Officer jobs.</h3>
+        <ul>
+          <li>Crown reduction + deadwood on a 30m radiata pine leaning toward the house ($1,800&ndash;$3,000)</li>
+          <li>Full removal of a 25m blue gum with codominant stems ($4,000&ndash;$7,000)</li>
+          <li>Storm callout: pine across the driveway after a north-westerly ($800&ndash;$2,000)</li>
+          <li>Building-pad clear + boundary-tree removal on Officer Estate ($2,500&ndash;$5,000)</li>
+          <li>Formative pruning of a row of advanced ornamental pears + magnolias ($500&ndash;$1,000)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other Cardinia Shire suburbs.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Officer tree work &mdash; free fixed-price quote.</h2>
+        <p>Established Officer or Officer Estate &mdash; both markets handled weekly.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

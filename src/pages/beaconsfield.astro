@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What kind of tree work do Beaconsfield homeowners need most?", "acceptedAnswer": { "@type": "Answer", "text": "Beaconsfield has a lot of established 1960s–1990s blocks with mature planted gardens — English oaks, elms, liquidambars, jacarandas, plus the original red gums and messmates on rural-residential properties up toward Beaconsfield Upper. The bread-and-butter work is crown reduction on mature oaks shedding into pools, deadwooding mature gums for storm prep, and full removal of structurally compromised radiata pines. Storm callouts spike whenever the spring north-westerlies blow through." } },
+    { "@type": "Question", "name": "Is Beaconsfield inside a Vegetation Protection Overlay?", "acceptedAnswer": { "@type": "Answer", "text": "Parts of Beaconsfield and most of Beaconsfield Upper sit inside Vegetation Protection Overlay (VPO) and Environmental Significance Overlay (ESO) zones — particularly the rural-residential and hills-fringe streets. Native trees over 10m height or 40cm trunk diameter generally need a planning permit before removal. We check the Cardinia Shire planning mapping street-by-street at the quote stage." } },
+    { "@type": "Question", "name": "Beaconsfield is technically Casey council in places — does that matter?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Beaconsfield straddles the Casey/Cardinia council boundary along the Princes Highway. North of the highway is mostly Casey, south of the highway is mostly Cardinia. The planning mapping is different between the two councils, the tree-protection rules differ, and the permit application processes differ. We handle work in both council areas and check which council applies for every quote." } },
+    { "@type": "Question", "name": "Storm callout to Beaconsfield?", "acceptedAnswer": { "@type": "Answer", "text": "60–90 minutes typical — Beaconsfield is in our central coverage zone, easy access off the Princes Highway. After-hours storm callouts handled by the duty arborist on the main number." } },
+    { "@type": "Question", "name": "Do you work on Beaconsfield Upper rural-residential blocks?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Beaconsfield Upper has larger blocks (1–5+ acres) with mature native canopy and a lot of bushfire-management considerations. Most blocks sit inside the Bushfire Management Overlay (BMO) and have the 10/30 vegetation-clearing right (10m around dwelling, modified vegetation within 30m) available without permit. Native vegetation outside that zone usually needs planning permission. We do removal, structural pruning, hazardous-tree assessment, and BMO defensible-space clearing." } }
+  ]
+};
+---
+<Layout
+  title="Tree Removal & Lopping Beaconsfield | Cardinia Tree Services | (03) 9003 0108"
+  description="Tree removal, lopping, stump grinding & storm response in Beaconsfield & Beaconsfield Upper. Mature oak & gum specialists. VPO/ESO planning checked. Both Casey & Cardinia councils handled."
+  canonical="https://cardiniatreeservices.com.au/beaconsfield/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Beaconsfield &middot; Beaconsfield Upper &middot; established + rural-residential</span>
+      <h1>Tree services in <span class="accent">Beaconsfield</span>.</h1>
+      <p class="hero-sub">
+        Mature oaks, elms and liquidambars on the established 1960s&ndash;1990s
+        blocks. Native canopy gums on Beaconsfield Upper rural-residential
+        acreage. Storm callouts after spring north-westerlies. VPO and ESO
+        planning checked at every quote &mdash; including the Casey/Cardinia
+        council split along the Princes Highway.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed-price quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Beaconsfield tree work</span>
+      <h2>What we see on Beaconsfield blocks.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Established 1960s&ndash;1990s blocks.</h3>
+        <p>
+          Beaconsfield&rsquo;s established residential streets &mdash;
+          O&rsquo;Neil Road, Beaconsfield-Emerald Road, Old Princes Highway
+          frontage &mdash; have mature gardens with planted oaks, elms,
+          liquidambars, the occasional walnut, and a lot of 30&ndash;40 year
+          old eucalypts on boundary lines. Crown reduction on the oaks
+          (autumn leaf-drop into pools), deadwooding on the gums (storm prep),
+          and selective removal of structurally compromised pines is the
+          regular weekly work.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Beaconsfield Upper rural-residential.</h3>
+        <p>
+          Up toward Beaconsfield Upper &mdash; Pound Road, Stoney Creek Road
+          north, the McGuires Road area &mdash; blocks get to 1&ndash;5+
+          acres with mature native canopy: messmate stringybark, narrow-leaf
+          peppermint, manna gum, swamp gum. Most of this country sits inside
+          the Bushfire Management Overlay with VPO/ESO controls on native
+          vegetation. The 10/30 rule allows clearing within 10m of an
+          existing dwelling and modified vegetation 30m out without permit;
+          anything beyond needs a planning permit.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Casey vs Cardinia council.</h3>
+        <p>
+          Beaconsfield straddles the council boundary along the Princes
+          Highway. Different planning mapping, different VPO/ESO overlays,
+          different permit processes. We check which council applies for
+          every Beaconsfield quote &mdash; it&rsquo;s tripped up more than
+          one weekend operator who lodged the wrong permit.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Beaconsfield jobs.</h3>
+        <ul>
+          <li>Crown reduction on a mature English oak shedding into the pool ($1,200&ndash;$2,200)</li>
+          <li>Deadwood + structural assessment on a 25m messmate boundary gum ($800&ndash;$1,400)</li>
+          <li>Full removal of a 35m radiata pine with heart rot ($5,500&ndash;$9,500)</li>
+          <li>BMO defensible-space clearing on a 2-acre Beaconsfield Upper block ($3,500&ndash;$6,500)</li>
+          <li>Storm callout: oak limb through carport ($600&ndash;$1,500)</li>
+          <li>Hazardous-tree report for sale of property ($350&ndash;$650)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other Cardinia Shire suburbs.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Beaconsfield tree work &mdash; free fixed-price quote.</h2>
+        <p>Mature oak, pine or gum. Established or rural-residential. Both councils handled.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

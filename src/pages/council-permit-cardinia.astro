@@ -1,0 +1,191 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Which trees in Cardinia Shire actually need a Council permit before removal?", "acceptedAnswer": { "@type": "Answer", "text": "Under the Cardinia Shire Council Tree Protection Local Law, you need a permit before you lop, prune more than 10% of the canopy, ringbark, kill, or remove any tree with a trunk circumference of 110cm or more measured at 1.4m above ground (roughly 35cm diameter at breast height). On top of that, any indigenous-remnant species — River Red Gum (Eucalyptus camaldulensis), Yellow Box (E. melliodora), Manna Gum (E. viminalis), Messmate Stringybark (E. obliqua) and Blackwood (Acacia melanoxylon) — is protected at any size if it pre-dates the subdivision. Trees inside an Environmental Significance Overlay or Vegetation Protection Overlay are also covered by the Planning Scheme on top of the Local Law. If you're unsure whether your tree is in scope, send us a photo on (03) 9003 0108 and we'll measure it and check the planning maps for your title before you commit." } },
+    { "@type": "Question", "name": "How long does a Cardinia Shire tree removal permit application take and what does it cost?", "acceptedAnswer": { "@type": "Answer", "text": "The Council Local Law tree permit application currently sits at around $108 lodgement and typically takes 14–28 days to process, longer in spring when applications spike. A planning permit (needed if you're inside an ESO or VPO) is a separate process — usually 60+ days and $1,300+. We lodge the Local Law application for you, include an AQF Level 3 arborist report stating the reason (dead, structurally unsafe, building footprint, etc.), photos at four compass points, and a site sketch with the trunk circumference recorded. Around 80% of well-prepared Local Law applications come back approved or conditionally approved. Planning permits are slower and more uncertain — we'll flag if your tree is in that bucket before you spend the fee." } },
+    { "@type": "Question", "name": "What is the fine for removing a protected tree in Cardinia Shire without a permit?", "acceptedAnswer": { "@type": "Answer", "text": "Council can issue an on-the-spot infringement notice in the order of $1,800 per tree for a Local Law breach, and prosecute through the Magistrates' Court for serious cases — fines on those run into five figures plus a Court order to replant. If the tree was inside an ESO, VPO or other planning overlay, the breach is under the Planning and Environment Act and the maximum penalty is over $200,000 for an individual. Contractors who knock down a protected tree without sighting the permit can be prosecuted too. We do not start a removal in Cardinia until the permit number is on the job ticket — full stop." } },
+    { "@type": "Question", "name": "What exemptions apply — when can I remove a Cardinia tree without a permit?", "acceptedAnswer": { "@type": "Answer", "text": "The Local Law has narrow exemptions: trees that are genuinely dead (not just sparse or stressed); trees that have failed and are creating an immediate, demonstrable risk to life or property (the storm-fallen tree exemption); pest species declared under the Catchment and Land Protection Act; and trees inside 10m of an existing dwelling that meet specific criteria. The 'dead' exemption gets misused often — Council inspectors do follow up, and a tree with green leaves in the canopy is not dead. If we're cutting under an exemption we record photos, GPS, and a written justification on the job sheet in case Council asks, and we recommend you keep that file for seven years." } }
+  ]
+};
+---
+<Layout
+  title="Council permit for tree removal in Cardinia Shire — protected species, fees, fines | (03) 9003 0108"
+  description="What the Cardinia Shire Tree Protection Local Law covers — 110cm circumference threshold, protected indigenous remnants (River Red Gum, Yellow Box, Manna Gum, Messmate, Blackwood), permit fee, processing time, and the fine for unauthorised removal."
+  canonical="https://cardiniatreeservices.com.au/council-permit-cardinia/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Compliance &middot; Cardinia Shire Local Law</span>
+      <h1>Council permit for tree removal in <span class="accent">Cardinia Shire</span>.</h1>
+      <p class="hero-sub">
+        Before the chainsaw, the paperwork. Cardinia Shire&rsquo;s Tree
+        Protection Local Law covers any tree over 110cm trunk circumference,
+        plus every indigenous remnant on the protected species list at any
+        size. We measure, photograph and lodge the application for you. Permit
+        number on the job ticket before the first cut &mdash; always.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Free permit-check quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">The Local Law in plain English</span>
+      <h2>What the Cardinia Shire Tree Protection Local Law actually covers.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Cardinia Shire is a fast-growing council with a serious indigenous
+          tree cover &mdash; the foothills around Beaconsfield Upper, Emerald,
+          Cockatoo and Gembrook hold some of the last remaining River Red Gum
+          and Manna Gum populations on the western side of the Dandenongs. The
+          Council Local Law exists to stop those remnants disappearing one
+          backyard at a time as the corridor develops.
+        </p>
+        <p>
+          The trigger is simple but easily missed. Any tree with a trunk
+          circumference of 110cm or more at 1.4m above ground level is in
+          scope &mdash; that&rsquo;s about a 35cm diameter trunk, which is
+          smaller than most homeowners assume. We carry a forestry tape on
+          every quote because the eyeball estimate is almost always under.
+        </p>
+        <h3 style="margin-top: 2rem;">The protected indigenous species list.</h3>
+        <p>
+          Five species are protected regardless of size if they are
+          genuinely indigenous remnants (i.e. they pre-date the subdivision and
+          were not planted):
+        </p>
+        <ul>
+          <li><strong>River Red Gum</strong> (Eucalyptus camaldulensis) &mdash; the big sprawling gums along Cardinia Creek and Toomuc Creek.</li>
+          <li><strong>Yellow Box</strong> (Eucalyptus melliodora) &mdash; common on the volcanic plain country south of Pakenham.</li>
+          <li><strong>Manna Gum</strong> (Eucalyptus viminalis) &mdash; the smooth-trunked gums dropping ribbons of bark, especially through Beaconsfield Upper and Emerald.</li>
+          <li><strong>Messmate Stringybark</strong> (Eucalyptus obliqua) &mdash; the fibrous-barked stringybarks of the hills district.</li>
+          <li><strong>Blackwood</strong> (Acacia melanoxylon) &mdash; understorey wattle, often missed because people see &ldquo;just a wattle&rdquo; and reach for the chainsaw.</li>
+        </ul>
+        <p>
+          If you have one of these on your block and it pre-dates the title
+          subdivision, assume it is protected and call us before you touch it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Application process</span>
+      <h2>How the permit actually gets filed.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Our standard permit-managed job runs like this. We come out, measure
+          the trunk circumference at 1.4m, identify the species (we ID against
+          the Cardinia Shire indigenous species reference, not just &ldquo;some
+          kind of gum&rdquo;), photograph the tree from north / south / east /
+          west, sketch the site with the dwelling and any other significant
+          trees marked, and write the AQF Level 3 arborist justification.
+          Reasons that get approved: structurally unsafe (defect documented,
+          QTRA risk rating), within the building footprint of an approved
+          planning permit, dead crown more than 50%, root encroachment
+          damaging dwelling footings.
+        </p>
+        <p>
+          Lodgement fee is currently around $108. Processing runs 14&ndash;28
+          days for a clean Local Law application. We chase it through
+          Council&rsquo;s tree team, respond to any RFI within 48 hours, and
+          deliver you the approved permit document with conditions before we
+          book the cut date. The permit is valid for 12 months from issue
+          &mdash; you do not have to remove the tree the day it&rsquo;s
+          approved.
+        </p>
+        <h3 style="margin-top: 2rem;">When you need a planning permit instead (or as well).</h3>
+        <p>
+          If your title is overlaid with an Environmental Significance Overlay
+          (ESO), Vegetation Protection Overlay (VPO), Significant Landscape
+          Overlay (SLO) or Bushfire Management Overlay (BMO), the Local Law
+          permit is not enough &mdash; you also need a planning permit under
+          the Cardinia Planning Scheme. Those run 60+ days, $1,300+, and are
+          decided against State planning policy not just the Local Law. We
+          check the title against the Cardinia planning maps at quote stage
+          and tell you straight if you&rsquo;re in that bucket before you
+          spend anything.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Frequently asked</span>
+      <h2>Cardinia permit questions.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+
+        <h3>Which trees in Cardinia Shire actually need a Council permit before removal?</h3>
+        <p>
+          Under the Cardinia Shire Council Tree Protection Local Law, a permit
+          is required before you lop, prune more than 10% of the canopy,
+          ringbark, kill or remove any tree with a trunk circumference of
+          110cm or more at 1.4m above ground (roughly 35cm DBH). Any
+          indigenous-remnant River Red Gum, Yellow Box, Manna Gum, Messmate
+          Stringybark or Blackwood is protected at any size if it pre-dates
+          the subdivision. Overlay land (ESO, VPO, SLO, BMO) needs a planning
+          permit on top of the Local Law.
+        </p>
+
+        <h3>How long does a Cardinia permit take and what does it cost?</h3>
+        <p>
+          Around $108 lodgement, 14&ndash;28 days for the Local Law permit. A
+          planning permit, if your title is in an overlay, is a separate
+          process &mdash; 60+ days and $1,300+. Spring is the slow season
+          because the application volume spikes after winter storms. We lodge
+          and chase it for you.
+        </p>
+
+        <h3>What is the fine for cutting a protected tree without a permit?</h3>
+        <p>
+          On-the-spot infringement around $1,800 per tree under the Local Law,
+          with Magistrates&rsquo; Court prosecution for serious cases. If the
+          tree was inside a planning overlay, the offence is under the
+          Planning and Environment Act with maximum penalties above $200,000
+          for an individual, plus replanting orders. Contractors who cut
+          without sighting the permit can be prosecuted directly.
+        </p>
+
+        <h3>What about a dead tree &mdash; do I still need a permit?</h3>
+        <p>
+          Genuinely dead trees (no live foliage, no green under the bark) are
+          exempt, but Council does follow up. A stressed tree with sparse
+          canopy is not dead. We photograph and GPS-tag every exempt removal
+          and keep the file in case Council inspects after the fact.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Got a tree you&rsquo;re not sure about?</h2>
+      <p style="max-width: 50rem; margin: 1rem auto;">
+        Send a photo and a rough measurement and we&rsquo;ll tell you within
+        an hour whether it&rsquo;s in scope, what the permit pathway is, and
+        what the realistic timeline looks like &mdash; before you spend a
+        dollar.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="mailto:quotes@cardiniatreeservices.com.au">Email a photo</a>
+      </div>
+    </div>
+  </section>
+</Layout>

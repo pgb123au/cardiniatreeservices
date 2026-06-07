@@ -1,0 +1,128 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What tree work is most common in Heritage Springs?", "acceptedAnswer": { "@type": "Answer", "text": "Heritage Springs is a newer Pakenham growth-corridor estate, so the work mirrors Cardinia Lakes: building-pad clearing at the start, boundary-gum management on retained paddock trees, stump grinding post-construction, and formative pruning of advanced ornamentals in years 1–3. Plus storm callouts on boundary gums when the spring north-westerlies hit." } },
+    { "@type": "Question", "name": "Storm callout time for Heritage Springs?", "acceptedAnswer": { "@type": "Answer", "text": "60–90 minutes for emergencies. Heritage Springs is right next to our Pakenham coverage base, so response is usually toward the lower end of the range." } },
+    { "@type": "Question", "name": "Are there protected trees in Heritage Springs?", "acceptedAnswer": { "@type": "Answer", "text": "Mostly not — Heritage Springs is a planned residential estate developed from ex-paddock land. The original eucalypt remnants on retained boundary fence lines occasionally attract Vegetation Protection Overlay coverage; we check the Cardinia Shire planning mapping at the quote stage. Most internal-block trees in the estate are landscape-planted ornamentals not subject to overlay protection." } },
+    { "@type": "Question", "name": "Do you do new-build coordination in Heritage Springs?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We coordinate with the major Cardinia builders for slab-pour timing, boundary-tree protection plans (AS 4970-2009 fencing for retained trees), post-build stump grinding for the landscaper to re-turf, and formative pruning of advanced ornamentals in years 1–3 after handover." } },
+    { "@type": "Question", "name": "Why do retained estate boundary gums fail in storms?", "acceptedAnswer": { "@type": "Answer", "text": "Three combined factors. (1) Construction earthworks disturbed the original soil profile and compacted the root anchorage zone. (2) The new estate's open aspect removes the wind-breaking canopy that surrounded the tree previously, so it now catches the full wind load. (3) Pruning history is usually poor — paddock trees rarely got proper formative pruning so codominant stems and bark inclusions are common. Pre-emptive deadwood + structural assessment in the first 2–3 years is the cheap insurance." } }
+  ]
+};
+---
+<Layout
+  title="Tree Removal & Stump Grinding Heritage Springs | Cardinia Tree Services | (03) 9003 0108"
+  description="Tree removal, stump grinding, formative pruning & storm response in Heritage Springs estate Pakenham. Boundary gums, building-pad clearing, advanced-ornamental pruning. Free fixed-price quote."
+  canonical="https://cardiniatreeservices.com.au/heritage-springs/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Heritage Springs &middot; Pakenham growth corridor</span>
+      <h1>Tree services in <span class="accent">Heritage Springs</span>.</h1>
+      <p class="hero-sub">
+        New-estate work: building-pad clearing, boundary-gum management on
+        retained paddock trees, post-construction stump grinding so the
+        landscaper can re-turf, and formative pruning of the advanced
+        ornamentals planted at 3m. Heritage Springs sits next door to our
+        Pakenham base &mdash; 60&ndash;90 min storm response.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed-price quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Heritage Springs tree work</span>
+      <h2>What new-estate blocks actually need.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Building-pad clearing at the start.</h3>
+        <p>
+          Most Heritage Springs builds need a small clearing job before the
+          slab goes in &mdash; remove the 1&ndash;3 remnant paddock trees
+          inside the slab footprint, grind stumps below excavation depth,
+          fence off any retained boundary trees with proper AS 4970-2009
+          tree-protection zones so the builder doesn&rsquo;t compact the
+          root zone. Coordinated with the builder&rsquo;s slab program.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Retained boundary gums.</h3>
+        <p>
+          The estate development kept many of the original paddock-fence
+          eucalypts on the new boundaries &mdash; usually messmate, manna gum
+          or swamp gum. After 2&ndash;5 years of disturbed soil, compacted
+          root zones and increased wind exposure (no surrounding canopy to
+          break the wind any more), these trees become storm-vulnerable in
+          ways their paddock-era selves weren&rsquo;t. We do a lot of
+          year-2 and year-3 deadwood + structural assessment work to head
+          off the storm calls.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Post-build stump grinding.</h3>
+        <p>
+          After the slab is poured and the builder leaves, the landscaper
+          wants to re-turf cleanly. Leftover boundary stumps and
+          construction-zone stumps need grinding to 100&ndash;150mm below
+          grade. Our 30cm narrow-access grinder fits through the standard
+          Heritage Springs 900mm side gate. Usually $200&ndash;$400 per
+          stump with volume discount for sets.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Formative pruning of advanced ornamentals.</h3>
+        <p>
+          The estate landscaper plants 3m advanced ornamentals (ornamental
+          pears, magnolias, gleditsia &lsquo;Sunburst&rsquo;, sometimes
+          jacarandas or crepe myrtles) with crossing branches and codominant
+          stems. A single formative-pruning visit in years 1&ndash;3 saves
+          $5K+ in structural prune work a decade later. We do these as
+          cheap maintenance &mdash; a row of 5&ndash;6 trees for
+          $400&ndash;$800.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Heritage Springs jobs.</h3>
+        <ul>
+          <li>Building-pad clear: 2&ndash;3 remnant gums + stump grind ($2,000&ndash;$4,500)</li>
+          <li>Deadwood + assessment on a retained year-2 boundary gum ($600&ndash;$1,200)</li>
+          <li>Stump grind set of 3&ndash;5 stumps post-construction ($500&ndash;$1,200)</li>
+          <li>Formative prune of 5 advanced ornamentals ($400&ndash;$800)</li>
+          <li>Storm callout: boundary gum across a colorbond fence ($600&ndash;$1,400)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other Cardinia Shire suburbs.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Heritage Springs tree work &mdash; free fixed-price quote.</h2>
+        <p>Building-pad, post-build, formative prune or storm callout.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

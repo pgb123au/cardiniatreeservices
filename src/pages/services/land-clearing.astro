@@ -1,0 +1,158 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Can I clear my whole block before building?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the planning controls on the block. Most green-field new-house blocks in Pakenham, Officer, Cardinia Lakes, Heritage Springs and the growth corridor can be cleared subject to a building permit and any vegetation-overlay conditions. Rural blocks and acreage may sit inside a Vegetation Protection Overlay (VPO), Environmental Significance Overlay (ESO), or have Significant Trees on register — in those cases, native trees over 10m height or 40cm trunk diameter need a planning permit before removal. We check the Cardinia Shire mapping at the quote stage and tell you exactly what's protected and what isn't." } },
+    { "@type": "Question", "name": "How much does land clearing cost in Cardinia Shire?", "acceptedAnswer": { "@type": "Answer", "text": "Per-acre rates vary by density and species. Light cover (scattered ornamentals, low shrubs, easy access): $2,000–$3,500/acre. Medium cover (mature ornamentals, some 10–15m trees, normal understorey): $3,500–$5,500/acre. Heavy cover (dense bush, mature gums, blackberry/bracken understorey): $5,500–$8,000/acre. Building-pad-only clearing (the 12×20m footprint plus 5m around it) on an otherwise cleared rural block is usually $1,200–$3,500 flat." } },
+    { "@type": "Question", "name": "What about the mulch and the logs?", "acceptedAnswer": { "@type": "Answer", "text": "Standard clearing job chips all brush on-site through a 12-inch chipper. Chips can be (a) windrowed on-site for natural breakdown, (b) spread across the block as mulch, (c) loaded into the truck and removed, or (d) sold to a landscape supply yard. Logs over 200mm diameter can be cut to firewood length and stacked, or carted to our yard. We sometimes do the clear-and-mill on heritage trees — milling planks for the homeowner's later building project." } },
+    { "@type": "Question", "name": "Do I need a planning permit for native vegetation removal?", "acceptedAnswer": { "@type": "Answer", "text": "Often yes on rural blocks and parts of the Cardinia hills. The Vegetation Protection Overlay (VPO) and Environmental Significance Overlay (ESO) require a planning permit to remove native vegetation above thresholds (typically over 10m height, over 40cm trunk diameter at 1m, or any tree on the Significant Tree Register). Application turnaround is 6–10 weeks, sometimes longer if a flora & fauna assessment is required. We lodge the application on your behalf when needed." } },
+    { "@type": "Question", "name": "Can you clear around an existing house for renovation?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — this is common when extending, building a granny flat or putting in a pool. We do staged clearing with the existing house protected (exclusion zones, plastic sheeting over windows, chipper located away from the dwelling). For mature trees being kept, we deliver a tree-protection plan compliant with AS 4970-2009 (Protection of Trees on Development Sites) so the builder doesn't damage them during construction." } },
+    { "@type": "Question", "name": "What about stumps after the clear?", "acceptedAnswer": { "@type": "Answer", "text": "Two options. (1) Grind everything to 300–500mm below grade so the block is ready for excavation/building — usually adds $40–$80 per stump on top of the per-acre clearing rate. (2) Leave stumps for the bulldozer to push out during site excavation — usually the cheaper option if the building program includes earthworks anyway. We work with the builder's program to do whichever is most efficient." } },
+    { "@type": "Question", "name": "How long does a clear take?", "acceptedAnswer": { "@type": "Answer", "text": "A small house-pad clear (one acre or less) is 1–2 days. A typical 1–2 acre rural-residential clear is 3–5 days. A full 5+ acre block clear is 1–3 weeks depending on density. We work through the standard sequence: large trees first (climber + chipper), then understorey (excavator/skid steer with mulcher attachment), then final cleanup and grade." } }
+  ]
+};
+---
+<Layout
+  title="Land Clearing Pakenham & Cardinia Shire | Build-Site Tree Removal | (03) 9003 0108"
+  description="Land clearing for new house blocks, subdivisions and paddock revival across Pakenham, Officer, Beaconsfield & Cardinia Shire. Tree drop, understorey, chipping, mulch removal. Permits checked. $2K–$8K/acre."
+  canonical="https://cardiniatreeservices.com.au/services/land-clearing/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Build-site clearing &middot; subdivision prep &middot; paddock revival</span>
+      <h1>Land clearing in <span class="accent">Pakenham &amp; Cardinia Shire</span>.</h1>
+      <p class="hero-sub">
+        Full-block clearing for new house pads, subdivisions, paddock revival
+        and renovation works. Tree drop, understorey clearing, chipping, mulch
+        removal, stump grinding to engineering depth. Council permits checked
+        at the quote stage and lodged on your behalf where needed.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed-price quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The Cardinia Shire planning check.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          Before any chainsaw fires we check the Cardinia Shire planning
+          mapping for the block. What we&rsquo;re looking for:
+        </p>
+        <ul>
+          <li><strong>Significant Tree Register entries</strong> &mdash; protected trees that need a planning permit and often an arborist&rsquo;s impact assessment before any work. Fines for unauthorised removal start at $9,000+.</li>
+          <li><strong>Vegetation Protection Overlay (VPO)</strong> &mdash; native trees over 10m height or 40cm trunk diameter at 1m need a planning permit. Common across the Cardinia hills and rural east of the shire.</li>
+          <li><strong>Environmental Significance Overlay (ESO)</strong> &mdash; biodiversity-protected areas, often near Bunyip State Forest and Cardinia Reservoir margins. Native vegetation removal restricted.</li>
+          <li><strong>Bushfire Management Overlay (BMO)</strong> &mdash; the 10/30 vegetation-clearing rule sometimes permits clearing within 10m of an existing dwelling without a permit, and modified vegetation within 30m. Limits apply.</li>
+          <li><strong>Native Vegetation Removal Regulations 2017</strong> &mdash; the state-level framework. Three pathways depending on extent: basic, intermediate, detailed. Larger clears often trigger biodiversity offsets.</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          We tell you exactly what&rsquo;s protected on your block before we
+          quote. Where a permit is needed, we lodge it on your behalf
+          (6&ndash;10 week typical turnaround).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Standard clearing workflow.</h2>
+      <div style="max-width: 65rem;">
+        <h3>1. Site walk + planning check.</h3>
+        <p>
+          We walk the block, mark protected trees (if any) with high-vis
+          ribbon, identify access points for the chipper and excavator,
+          note any services or neighbouring fences that need protection.
+          Planning-check email goes to you within 48 hours with a written
+          fixed-price quote.
+        </p>
+
+        <h3 style="margin-top: 2rem;">2. Large-tree removal.</h3>
+        <p>
+          The mature gums, oaks and remnant indigenous canopy trees go
+          first &mdash; usually climbed-sectional next to any kept
+          structures, whole-tree drop on open blocks. 12-inch chipper
+          processing brush continuously, log lengths set aside for
+          firewood or carting.
+        </p>
+
+        <h3 style="margin-top: 2rem;">3. Understorey clearing.</h3>
+        <p>
+          Once the canopy is down we bring in either a skid steer with
+          forestry mulcher head, or an excavator with grapple, to deal
+          with the shrub layer (blackberry, bracken, regrowth wattles,
+          gorse, broom). Mulched directly into the chip pile.
+        </p>
+
+        <h3 style="margin-top: 2rem;">4. Stump treatment.</h3>
+        <p>
+          Two options. (1) Grind all stumps 300&ndash;500mm below grade for
+          immediate site readiness. (2) Cut flush and leave for the
+          builder&rsquo;s excavator to push out during earthworks &mdash;
+          cheaper if earthworks are already planned. We work with the
+          builder&rsquo;s program.
+        </p>
+
+        <h3 style="margin-top: 2rem;">5. Final cleanup.</h3>
+        <p>
+          Chips removed, spread on-site as mulch, or windrowed for breakdown
+          &mdash; your call. Boundary fences brushed clean. Driveways and
+          neighbour-strip raked. Block ready for the surveyor, the
+          excavator and the slab.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Typical land-clearing jobs.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>$1,200&ndash;$3,500:</strong> Building-pad-only clear &mdash; the 12×20m house footprint plus 5m around it. 1&ndash;2 days.</li>
+          <li><strong>$2,000&ndash;$3,500/acre:</strong> Light cover &mdash; scattered ornamentals, low shrubs, easy access. Common on Cardinia Lakes / Heritage Springs greenfield blocks.</li>
+          <li><strong>$3,500&ndash;$5,500/acre:</strong> Medium cover &mdash; mature ornamentals, some 10&ndash;15m trees, standard rural-residential understorey.</li>
+          <li><strong>$5,500&ndash;$8,000/acre:</strong> Heavy cover &mdash; dense bush, mature gums, blackberry/bracken understorey. Common on eastern Cardinia rural blocks near Bunyip State Forest.</li>
+          <li><strong>Plus stump grind</strong> if not bundled with earthworks: $40&ndash;$80 per stump in volume.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Get a fixed-price land-clearing quote.</h2>
+        <p>Planning check at the quote stage. Permits lodged where needed. Block ready for slab.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
